@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <!-- 
 Credits:
-Used responsive CSS package made by W3.
-Contents and JS features written by Junghwan(John) Lee. 
+Based on W3 responsive CSS package & layout. 
+Implemented additional CSS and JavaScript by Junghwan(John) Lee.
+Content imported from the previous version of the website (archived in the same domain).
 -->
 <html lang="en">
 <title>John's Personal Website</title>
@@ -17,8 +18,29 @@ body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
-.w3-custom,.w3-hover-custom:hover{color:#fff!important;background-color:#4F758B!important}
+.w3-custom,.w3-hover-custom:hover{
+    color:#fff!important;background-color:#4F758B!important
+}
+.column {
+    float: left;
+}
+.profile-left {width: 20%;}
+.profile-filler1 {width: 3%;}
+.profile-right {width: 70%;}
+.profile-inner-left {width: 60%;}
+.profile-inner-right {width: 40%;}
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
 <body>
 
@@ -57,15 +79,38 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Introduction -->
-  <div class="w3-container" style="margin-top:70px">
-    <h1 style="font-size: 60px;"><b>Hi, I'm John!</b></h1>
-    <p> Welcome to my website :) <br> <br>
-
-        <div style="margin-left: 50px;">
-            <i class="fa fa-envelope"></i> leejohn24@berkeley.edu <br>
-            <i class="fa fa-user-circle-o"></i> [linkedin link] <br>
-            <i class="fa fa-user-circle-o"></i> [GitHub link] <br>
+<div class="w3-container" style="margin-top:70px">
+    <div class="row">
+        <div class="column profile-left" style="text-align: center;">
+            <img src="profile-drawing.png" alt="profile-drawing" style="width: auto; height: 350px; border-radius: 25px;">
         </div>
+
+        <div class="column profile-filler1" style="margin-top: 20px;"></div>
+
+        <div class="column profile-right">
+
+            <h1 style="font-size: 60px;"><b>Hi, I'm John!</b></h1>
+
+            <div class="row">
+                <div class="column profile-inner-left" style="margin-top: 40px;"> 
+                    <b style="font-size: 24px;">About Me</b> <br><br>
+                    <div style="margin-left: 10px;">
+                        [intro]
+                    </div>
+                </div>
+
+                <div class="column profile-inner-right" style="margin-top: 40px;"> 
+                    <b style="font-size: 24px;">Contact</b> <br><br>
+                    <div style="margin-left: 10px;">
+                        <i class="fa fa-envelope"></i> leejohn24@berkeley.edu <br>
+                        <i class="fa fa-user-circle-o"></i> [linkedin link] <br>
+                        <i class="fa fa-user-circle-o"></i> [GitHub link] <br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
     
@@ -141,15 +186,15 @@ body {font-size:16px;}
         </div>
 
         <div class="w3-col m4 w3-margin-bottom">
-        <div class="w3-light-grey">
-            <img src="in-progress.png" alt="website" style="width:100%">
-            <div class="w3-container">
-            <h3>Personal Website</h3>
-            <p class="w3-opacity">Aug 2020</p>
-            <p>Personal website programmed with W3 CSS package, HTML, and JavaScript (this site!) <br><br></p>
+            <div class="w3-light-grey">
+                <img src="in-progress.png" alt="personal-website" style="width:100%">
+                <div class="w3-container">
+                <h3>Personal Website</h3>
+                <p class="w3-opacity">Aug 2020</p>
+                <p>Responsive personal website programmed with W3 CSS package, HTML, and JavaScript (this site!)</p>
+                </div>
             </div>
-        </div>
-        </div>
+            </div>
 
         <div class="w3-col m4 w3-margin-bottom">
         <div class="w3-light-grey">
@@ -178,9 +223,9 @@ body {font-size:16px;}
         <div class="w3-light-grey">
             <img src="in-progress.png" alt="enigma" style="width:100%">
             <div class="w3-container">
-            <h3>Enigma Machine</h3>
+            <h3>Enigma Cipher</h3>
             <p class="w3-opacity">Feb 2020</p>
-            <p>Message encrpytion & decryption software that mimics the rotor-plugboard cipher method of an Enigma machine</p>
+            <p>Message encrpytion & decryption software that mimics the rotor, reflector, and plugboard of an Enigma machine</p>
             </div>
         </div>
         </div>
@@ -294,8 +339,8 @@ body {font-size:16px;}
 
 <!-- Footer -->
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px;text-align: right; font-size: 14px;">
-    Recent as of July 31th, 2020 <br>
-    Junghwan(John) Lee
+    Recent as of August 1st, 2020 <br>
+    &copy; Junghwan(John) Lee
 </div>
 
 <script>
