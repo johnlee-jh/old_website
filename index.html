@@ -26,7 +26,7 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"><b>Contents<br></b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Profile</a> 
     <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Education</a> 
     <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Projects</a> 
     <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Experience</a>
@@ -34,6 +34,10 @@ body {font-size:16px;}
     <a href="#honors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Honors</a>
 
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="margin-top: 50px;">Hobbies</a>
+
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="margin-top: 50px;">Random Ideas</a>
+
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="margin-top: 50px;">Let's Connect!</a>
 
   </div>
 </nav>
@@ -125,7 +129,7 @@ body {font-size:16px;}
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
 
     <!-- Actual projects -->
-    <div class="w3-row-padding w3-grayscale">
+    <div class="w3-row-padding">
         <div class="w3-col m4 w3-margin-bottom">
         <div class="w3-light-grey">
             <img src="in-progress.png" alt="type-oh" style="width:100%">
@@ -157,7 +161,7 @@ body {font-size:16px;}
         </div>
         </div>
     </div>
-    <div class="w3-row-padding w3-grayscale">
+    <div class="w3-row-padding">
         <div class="w3-col m4 w3-margin-bottom">
         <div class="w3-light-grey">
             <img src="loa-ai.png" alt="loa-ai" style="width:100%">
@@ -174,7 +178,7 @@ body {font-size:16px;}
             <div class="w3-container">
             <h3>Enigma Machine</h3>
             <p class="w3-opacity">Feb 2020</p>
-            <p>[description]</p>
+            <p>Message encrpytion & decryption software that mimics the rotor-plugboard cipher method of an Enigma machine</p>
             </div>
         </div>
         </div>
@@ -280,16 +284,16 @@ body {font-size:16px;}
   </div>
 
 
-<!-- THE END -->
+
 </div>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px;text-align: right;"> Recent as of July 31th, 2020 <br>
     Junghwan(John) Lee
 </div>
 
 <script>
-// Script to open and close sidebar
+// Open/Close Contents in Mobile
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
@@ -300,7 +304,7 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
-// Modal Image Gallery
+// Image Gallery (Unused)
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
@@ -308,6 +312,7 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
+// Show/Hide Abstract
 function abstract1() {
   var x = document.getElementById("abstract1");
   if (x.style.display === "none") {
