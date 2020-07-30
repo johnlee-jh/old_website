@@ -1,8 +1,300 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<title>John's Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Responsive CSS template credit to w3school-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
 <body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-blue-grey w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px;">Close</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Contents<br></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Education</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Experience</a>
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Honors & Awards</a>
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skills</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Honors & Awards</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">☰</a>
+  <span></span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Titleo -->
+  <div class="w3-container" style="margin-top:70px">
+    <h1 class="w3-jumbo"><b>Hi, I'm John!</b></h1>
+    <p>Welcome to my personal website. In this website, you will be able to see my various projects and experience :) <br> <br>
+
+    <n style="color: grey;"> Please note the site is currently under construction. </n><br><br>
+
+    [Intro] <br> <br>
+
+    [Skills like Java and stuff]
+    </p>
+  </div>
+
+
+  <!-- Education -->
+  <div class="w3-container" id="education" style="margin-top:30px">
+    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Education</b></h1>
+    <hr style="width: 70vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
+    <div class="w3-row-padding">
+        <div class="w3-half">
+            <div>
+                <b style="font-size: 24px;">University of California, Berkeley</b> <br>
+                <i>B.A.</i> in Computer Science and Physics <br>
+                GPA: 3.515/4.0 <br>
+                Aug 2019 - May 2023 (Current Sophomore) <br>
+        
+                <p  style="color: slategray;"> Relevant Coursework: <br>
+                    &nbsp;&nbsp; <b>CS 61A</b>: Structure and Interpretation of Computer Programs <br>
+                    &nbsp;&nbsp; <b>CS 61B</b>: Data Structures <br>
+                    &nbsp;&nbsp; <b>CS 61C</b>: Computer Architectures <br>
+                    &nbsp;&nbsp; <b>CS 70 </b>: Discrete Mathematics & Probability <br>
+                    &nbsp;&nbsp; <b>Physics 7A</b>: Physics for Scientists and Engineers - Mechanics <br>
+                    &nbsp;&nbsp; <b>EECS 16A</b>: Designing Information Devices and Systems 1 <br>
+                    &nbsp;&nbsp; <b>Philos 12A</b>: Introduction to Logic <br>
+                </p>
+            </div>
+        </div>
+    
+        <div class="w3-half">
+            <div>
+                <b style="font-size: 24px;">CheongShim International Academy</b> <br>
+                <i>High School Diploma</i> <br>
+                GPA: 4.95/5.0 <br>
+                Mar 2016 - Feb 2019 <br>
+                <p  style="color: slategray;"> Relevant Coursework (used for college credit):<br>
+                    &nbsp;&nbsp; AP Statistics <br>
+                    &nbsp;&nbsp; AP Calculus AB & BC <br>
+                    &nbsp;&nbsp; AP Chemistry <br>
+                    &nbsp;&nbsp; AP English Language & Composition <br>
+                    &nbsp;&nbsp; AP Computer Science A <br>
+                    &nbsp;&nbsp; AP Physics C: Mechanics <br>
+                    &nbsp;&nbsp; AP Physics C: Electricty & Magnetism <br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+  </div>
   
-<h1>Hello World</h1>
-  
+  <!-- Projects -->
+  <div class="w3-container" id="projects" style="margin-top:30px">
+    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Projects</b></h1>
+    <hr style="width: 70vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
+    Images not available yet. (But will be soon!) <br><br>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="type-oh" style="width:100%">
+        <div class="w3-container">
+          <h3>Type-oh!</h3>
+          <p class="w3-opacity"> Current </p>
+          <p>Typo correction software based on grammar and word relevance through machine learning</p> <br>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="mini-git" style="width:100%">
+        <div class="w3-container">
+          <h3>Mini-Git</h3>
+          <p class="w3-opacity">May 2020</p>
+          <p>Local version-control system that can run and execute Git commands through serialization and Java I/O File manipulation</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="loa-ai" style="width:100%">
+        <div class="w3-container">
+          <h3>Lines of Action AI</h3>
+          <p class="w3-opacity">Mar 2020</p>
+          <p>AI for the game Lines of Action made using minimax algorithms, heuristics, and alpha-beta pruning.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="w3-container" id="experience" style="margin-top:30px">
+    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Experience</b></h1>
+    <hr style="width: 70vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
+    <div class="w3-row-padding">
+        <div class="w3-half" >
+            <div>
+                <b style="font-size: 24px;">IPMD Inc.</b> <br>
+                Software Engineering Intern, <n style="color: slategrey;"> May 2020 - Aug 2020 </n> <br>
+                <p> 
+                    &nbsp;&nbsp;•	Built a responsive testing website (projectm.ipmdinc.com) for Project M (emotion-detecting AI) using HTML/CSS with Bootstrap <br>
+                    &nbsp;&nbsp;•	Implemented PayPal donate and Google/Facebook sign-in features within the website through JS <br>
+                    &nbsp;&nbsp;•	Wrote the Privacy Policy and Terms & Conditions for user data collection <br>
+                </p>
+            </div>
+        </div>
+    
+        <div class="w3-half">
+            <div>
+                <b style="font-size: 24px;">IEEE Student Branch at UC Berkeley</b> <br>
+                Website Officer, <n style="color: slategrey;"> Jan 2020 - May 2020 </n> <br>
+                <p>
+                    &nbsp;&nbsp;•	Created a new course website for EE198 <i>(Hands-on PCB Engineering)</i> using Handlebars and HTML <br>
+                    &nbsp;&nbsp;•	Improved the UI/UX of the organization’s website (ieee.berkeley.edu) through Ghost and Sass <br>
+                    &nbsp;&nbsp;•	Presented a personal website workshop for ~30 Berkeley students <br>
+                    &nbsp;&nbsp;•	Assisted teaching hands-on electronic engineering to create cost and energy effective house lights for 6th-grade students in E4K (Engineering for Kids)
+                </p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="w3-row-padding">
+        <div class="w3-half">
+            <div>
+                <b style="font-size: 24px;">Pacific Engineering Club</b> <br>
+                Founder & President, <n style="color: slategrey;"> Mar 2017 - Feb 2019 </n> <br>
+                <p> 
+                    [List of stuff I did]
+                </p>
+            </div>
+        </div>
+    
+        <div class="w3-half">
+            <div>
+                <b style="font-size: 24px;">KIA Motors & MIT D-Lab Ecodynamics Expedition</b> <br>
+                Team Leader, <n style="color: slategrey;"> Jul 2015 - Aug 2015 </n> <br>
+                <p> 
+                    [List of stuff I did]
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Research -->
+  <div class="w3-container" id="honors" style="margin-top:30px">
+    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Research</b></h1>
+    <hr style="width: 70vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
+    <div> 
+        <b style="font-size: 20px;">Simplifying the Vaccum Bazooka</b>
+        <button onclick="abstract1()" style="font-size: 12px; margin-left: 20px;">Show Abstract</button>
+
+        <div id="abstract1">
+        [abstract]
+        </div>
+        <p></p>
+        <b style="font-size: 20px;">The Effect of Liquid on the Vibrational Intensity of a Wineglass at Steady State Resonance</b> <br>
+        <p></p>
+        <b style="font-size: 20px;">Measuring Granular Flow through a Funnel with a Force Sensor</b> <br>
+        <p></p>
+        <b style="font-size: 20px;">Dynamics of Cylindrical and Spherical Objects on a Turntable </b> <br>
+        <p></p>
+
+    </div>
+  </div>
+
+  <!-- Honors -->
+  <div class="w3-container" id="experience" style="margin-top:30px">
+    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Honors & Awards</b></h1>
+    <hr style="width: 70vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
+    Images not available yet. <br><br>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="experience" style="margin-top:30px">
+    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Contact</b></h1>
+    <hr style="width: 70vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
+    Images not available yet. <br><br>
+  </div>
+
+
+<!-- THE END -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px;text-align: right;"> Recent as of 2020 July 30th, 21:48:09 UTC+9 <br>
+    Junghwan(John) Lee
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function abstract1() {
+  var x = document.getElementById("abstract1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function abstract2() {
+  var x = document.getElementById("abstract2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function abstract3() {
+  var x = document.getElementById("abstract3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function abstract4() {
+  var x = document.getElementById("abstract4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
