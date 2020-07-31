@@ -36,10 +36,12 @@ body {font-size:16px;}
 .profile-inner-filler {width: 10%;}
 .profile-inner-right {width: 30%;}
 
-.skill-left {width: 50%;}
-.skill-right {width: 50%;}
+.skill-left {width: 48%;}
+.skill-main-fill {width: 2%;}
+.skill-right {width: 48%;}
 
-.skill-filler {width: 2%;}
+.skill-filler1 {width: 2.5%;}
+.skill-filler {width: 1%;}
 .skill-space {width: 23%;}
 
 .edu-left {width: 36%;}
@@ -120,11 +122,6 @@ body {font-size:16px;}
   <!-- Introduction -->
   <div class="w3-container" style="margin-top:70px">
     <div class="row">
-        <div class="column profile-left" style="text-align: center;">
-            <img src="profile-drawing.png" alt="profile-drawing" style="width: auto; height: 350px; border-radius: 25px;">
-        </div>
-
-        <div class="column profile-filler1" style="margin-top: 20px;"></div>
 
         <div class="column profile-right">
 
@@ -150,78 +147,84 @@ body {font-size:16px;}
 
         </div>
     </div>
+  </div>
 
-    <br><br>
-    <n style="color:red; font-size: 24px;">Website under construction (will be finished soon though!)</n> <br>
-
-    <div style="font-size: 30px;">
-        <b>Skills:</b>
-    </div>
-
+    <!-- Skills-->
+    <div class="w3-container" id="education" style="margin-top:50px">
+        <div style="margin-top:50px"></div>
+        <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Skills</b></h1>
+        <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
+    
     <div class="row" style="text-align: center; font-size: 20px;">
-        <div class="column skill-left" style="margin-top: 10px;">
-            Programming
+        <div class="column skill-left" style="margin-top: 10px; background-color: #9bc4e2; border-radius: 15px;">
+            <b style="font-size: 30px;">Programming</b> <br><br>
             <div class="row">
-                <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
+                <div class="static-column skill-filler1" style="margin-top: 10px;"> </div>
     
                 <div class="static-column skill-space" style="margin-top: 10px;">
-                    <i class="devicon-java-plain colored" style="font-size: 120px;"></i> <br>
-                    Java
+                    <i class="devicon-java-plain colored" style="font-size: 80px;"></i> <br>
+                    Java <br><br>
                 </div>
 
                 <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
     
                 <div class="static-column skill-space" style="margin-top: 10px;">
-                    <i class="devicon-python-plain colored" style="font-size: 120px;"></i> <br>
-                    Python
+                    <i class="devicon-python-plain colored" style="font-size: 80px;"></i> <br>
+                    Python <br><br>
                 </div>
 
                 <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
     
                 <div class="static-column skill-space" style="margin-top: 10px;">
-                    <i class="devicon-c-plain colored" style="font-size: 120px;"></i> <br>
-                    C
+                    <i class="devicon-c-plain colored" style="font-size: 80px;"></i> <br>
+                    C <br><br>
                 </div>
 
                 <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
     
                 <div class="static-column skill-space" style="margin-top: 10px;">
-                    <i class="devicon-git-plain colored" style="font-size: 120px;"></i> <br>
-                    Git
+                    <i class="devicon-git-plain colored" style="font-size: 80px;"></i> <br>
+                    Git <br><br>
                 </div>
+
+                <div class="static-column skill-filler1" style="margin-top: 10px;"> </div>
             </div>
         </div>
 
-        <div class="column skill-right" style="margin-top: 10px;">
-            Web Development
+        <div class="column skill-main-fill" style="margin-top: 10px;"></div>
+
+        <div class="column skill-right" style="margin-top: 10px; background-color: #fff192; border-radius: 15px;">
+            <b style="font-size: 30px;">Web Development</b> <br><br>
             <div class="row">
-                <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
+                <div class="static-column skill-filler1" style="margin-top: 10px;"> </div>
     
                 <div class="static-column skill-space" style="margin-top: 10px;">
-                    <i class="devicon-html5-plain colored" style="font-size: 120px;"></i> <br>
-                    HTML
+                    <i class="devicon-html5-plain colored" style="font-size: 80px;"></i> <br>
+                    HTML <br><br>
                 </div>
 
                 <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
     
                 <div class="static-column skill-space" style="margin-top: 10px;">
-                    <i class="devicon-css3-plain colored" style="font-size: 120px;"></i> <br>
-                    CSS
+                    <i class="devicon-css3-plain colored" style="font-size: 80px;"></i> <br>
+                    CSS <br><br>
                 </div>
 
                 <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
     
                 <div class="static-column skill-space" style="margin-top: 10px;">
-                    <i class="devicon-javascript-plain colored" style="font-size: 120px;"></i> <br>
-                    JavaScript
+                    <i class="devicon-javascript-plain" style="font-size: 80px;"></i> <br>
+                    JavaScript <br><br>
                 </div>
 
                 <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
     
                 <div class="static-column skill-space" style="margin-top: 10px;">
-                    <i class="devicon-mysql-plain colored" style="font-size: 120px;"></i> <br>
-                    SQL
+                    <i class="devicon-mysql-plain colored" style="font-size: 80px;"></i> <br>
+                    SQL <br><br>
                 </div>
+
+                <div class="static-column skill-filler1" style="margin-top: 10px;"> </div>
             </div>
 
         </div>
@@ -269,20 +272,6 @@ body {font-size:16px;}
                 
             </div>
         </div>
-        <div class="column edu-filler2" style="margin-top: 10px;">
-        </div>
-        <div class="column edu-right" style="margin-top: 10px;">
-            <div style="margin-top: 15px;">
-            <b>Skills</b> <br>
-            &nbsp;&nbsp; Java <br>
-            &nbsp;&nbsp; Python<br>
-            &nbsp;&nbsp; HTML/CSS/JS<br>
-            &nbsp;&nbsp; Git <br>
-            &nbsp;&nbsp; SQL <br>
-            &nbsp;&nbsp; OriginLab<br>
-            &nbsp;&nbsp; Scheme <br>
-            </div>
-        </div>
     </div>
 
   </div>
@@ -302,6 +291,7 @@ body {font-size:16px;}
             <h3>Type-oh!</h3>
             <p class="w3-opacity"> Current </p>
             <p>Typo correction software based on grammar and word relevance through machine learning</p> <br>
+            <br><br>
             </div>
         </div>
         </div>
@@ -313,6 +303,7 @@ body {font-size:16px;}
                 <h3>Personal Website</h3>
                 <p class="w3-opacity">Aug 2020</p>
                 <p>Responsive personal website (this) programmed with W3 CSS package, HTML, and JavaScript</p> <br>
+                <br><br>
                 </div>
             </div>
             </div>
@@ -324,6 +315,7 @@ body {font-size:16px;}
             <h3>Mini Git</h3>
             <p class="w3-opacity">May 2020</p>
             <p>Local version-control system that can run and execute most Git commands using serialization and Java I/O File Manipulation</p>
+            <br><br>
             </div>
         </div>
         </div>
@@ -336,6 +328,7 @@ body {font-size:16px;}
             <h3>Lines of Action AI</h3>
             <p class="w3-opacity"> Mar 2020 </p>
             <p>AI for the board game Lines of Action made using minimax algorithms, heuristics, and alpha-beta pruning</p>
+            <br><br>
             </div>
         </div>
         </div>
@@ -347,6 +340,7 @@ body {font-size:16px;}
             <h3>Enigma Cipher</h3>
             <p class="w3-opacity">Feb 2020</p>
             <p>Text encrpytion & decryption software that mimics the rotor, reflector, and plugboard mechanics of an Enigma machine</p>
+            <br><br>
             </div>
         </div>
         </div>
@@ -366,7 +360,7 @@ body {font-size:16px;}
         <div class="column exp-left3" style="margin-top: 20px;">
             <div style="margin-top: 15px;">
             <b>May 2020 - Present</b> <br>
-            <n style="color: grey;">Remote</n>
+            <n style="color: grey;">Remote</n> <br><br>
             </div>
         </div>
         <div class="column exp-middle3" style="margin-top: 20px; background-color: #e8e8e8; border-radius: 10px;">
@@ -386,7 +380,7 @@ body {font-size:16px;}
         <div class="column exp-left3" style="margin-top: 20px;">
             <div style="margin-top: 15px;">
             <b>Jan 2020 - May 2020</b> <br>
-            <n style="color: grey;">Berkeley, California, USA</n>
+            <n style="color: grey;">Berkeley, California, USA</n> <br><br>
             </div>
         </div>
         <div class="column exp-middle3" style="margin-top: 20px; background-color: #ededed; border-radius: 10px;">
