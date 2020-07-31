@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- 
+Credits:
+Based on W3 responsive CSS package & layout. 
+Additional CSS and JavaScript implemented by Junghwan(John) Lee.
+Content imported from the previous version of the website (archived in the same domain).
+-->
+<html lang="en">
+<title>John's Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.w3-custom,.w3-hover-custom:hover{
+    color:#fff!important;background-color:#4F758B!important
+}
+.column {
+    float: left;
+}
+.profile-left {width: 20%;}
+.profile-filler1 {width: 3%;}
+.profile-right {width: 70%;}
+.profile-inner-left {width: 60%;}
+.profile-inner-filler {width: 10%;}
+.profile-inner-right {width: 30%;}
+
+.edu-left {width: 36%;}
+.edu-filler1 {width: 3%;}
+.edu-middle {width: 42%;}
+.edu-filler2 {width: 3%;}
+.edu-right {width: 15%;}
+
+.exp-left1 {width: 0%;}
+.exp-middle1 {width: 70%;}
+.exp-right1 {width: 30%;}
+
+.exp-left2 {width: 10%;}
+.exp-middle2 {width: 70%;}
+.exp-right2 {width: 20%;}
+
+.exp-left3 {width: 20%;}
+.exp-middle3 {width: 70%;}
+.exp-right3 {width: 10%;}
+
+.exp-left4 {width: 30%;}
+.exp-middle4 {width: 70%;}
+.exp-right4 {width: 0%;}
+
+.research-left {width: 48.5%;}
+.research-filler {width: 2%;}
+.research-right {width: 48.5%;}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<body>
+
+<!-- Table of Contents/Sidebar -->
+<nav class="w3-sidebar w3-collapse w3-custom w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <div class="w3-container">
+    <h3 class="w3-padding-64" style="margin-top: -30px;"><b>Contents<br></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Profile</a> 
+    <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Education</a> 
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Projects</a> 
+    <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Experience</a>
+    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Research</a>
+    <a href="#honors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Honors</a>
+
+    <a href="interests.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="margin-top: 50px;">Interests</a>
+    <a href="#sports" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Sports</a>
+    <a href="#random" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Random Ideas</a>
+
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="margin-top: 50px; margin-bottom: 50px;">Let's Connect!</a>
+
+  </div>
+</nav>
+
+<!-- Mobile Table of Contents -->
+<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()" style="font-size: 16px;">☰ &nbsp;&nbsp; Contents</a>
+  <span></span>
+</header>
+
+<!-- Mobile Overlay -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Content -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Introduction -->
+  <div class="w3-container" style="margin-top:70px">
+    <div class="row">
+        
+    </div>
+
+    <br><br>
+    <n style="color:red; font-size: 24px;">Website under construction (will be finished soon though!)</n>
+  </div>
+
+
+  <!-- Sports -->
+  <div class="w3-container" id="sports" style="margin-top:100px">
+    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Sports</b></h1>
+    <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
+
+  </div>
+
+  <!-- Random Ideas -->
+  <div class="w3-container" id="random" style="margin-top:100px">
+    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Random Ideas</b></h1>
+    <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
+
+  </div>
+
+
+
+</div>
+
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px;text-align: right; font-size: 14px;">
+    Recent as of August 1st, 2020 <br>
+    &copy; Junghwan(John) Lee
+</div>
+
+<script>
+// Open/Close Contents in Mobile
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Image Gallery (Unused)
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+</html>
