@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <!-- 
-Credits:
-Based on W3 responsive CSS package & layout. 
-Additional CSS and JavaScript implemented by Junghwan(John) Lee.
+Credits: 
+HTML and JavaScript implemented by Junghwan(John) Lee. CSS package credit to W3.
 Content imported from the previous version of the website (privately archived in the same domain).
 -->
 <html lang="en">
@@ -29,15 +28,19 @@ body {font-size:16px;}
 .static-column {
     float: left;
 }
-.profile-left {width: 20%;}
-.profile-filler1 {width: 3%;}
-.profile-right {width: 70%;}
-.profile-inner-left {width: 60%;}
-.profile-inner-filler {width: 10%;}
-.profile-inner-right {width: 30%;}
+.remove-column {
+    float: left;
+}
+.main-left {width: 28.9%;}
+.main-middle {width: 60%;}
+.main-right {width: 11.1%;}
+
+.profile-left {width: 5%;}
+.profile-middle {width: 90%}
+.profile-right {width: 5%;}
 
 .skill-left {width: 48%;}
-.skill-main-fill {width: 2%;}
+.skill-main-fill {width: 4%;}
 .skill-right {width: 48%;}
 
 .skill-filler1 {width: 2.5%;}
@@ -81,29 +84,27 @@ body {font-size:16px;}
   .column {
     width: 100%;
   }
+  .remove-column {
+    width: 0%;
+    display: none;
+  }
 }
 </style>
 <body>
 
 <!-- Table of Contents/Sidebar -->
-<nav class="w3-sidebar w3-collapse w3-john-color w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-john-color w3-top w3-large w3-padding" style="z-index:3;width:17.8vw;font-weight:bold;" id="mySidebar"><br>
   <div class="w3-container">
-    <h3 class="w3-padding-64" style="margin-top: -30px;"><b>Contents<br></b></h3>
+    <h3 class="w3-padding-64" style="margin-top: 30px;"><b>Contents<br></b></h3>
   </div>
   <div class="w3-bar-block">
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Profile</a> 
+    <a href="index.html#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Skills</a> 
     <a href="index.html#education" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Education</a> 
     <a href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Projects</a> 
     <a href="index.html#experience" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Experience</a>
     <a href="index.html#research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Research</a>
     <a href="index.html#honors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Honors</a>
-
-    <a href="interests.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="margin-top: 50px;">Interests</a>
-    <a href="interests.html#sports" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Sports</a>
-    <a href="interests.html#random" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Random Ideas</a>
-
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="margin-top: 50px; margin-bottom: 50px;">Let's Connect!</a>
-
   </div>
 </nav>
 
@@ -116,40 +117,53 @@ body {font-size:16px;}
 <!-- Mobile Overlay -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- Content -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<div style="background-color: #A8D0E6; height: 70px;"></div>
+<div class="row" style="background-color: #A8D0E6;">
+    <div class="remove-column main-left" style="margin-top: 10px;"></div>
 
-  <!-- Introduction -->
-  <div class="w3-container" style="margin-top:70px">
+    <div class="column main-middle" style="background-color:white; border-radius: 15px;">
+
+<!-- Start of Content-->
+<div class="w3-main">
+
+    <!-- Introduction -->
     <div class="row">
+        <div class="column profile-left" style="margin-top: 50px;"></div>
 
-        <div class="column profile-right">
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #24305E;"> 
+            <div style="margin-left: 35px; margin-top: 30px;">
+                <h1 style="font-size: 48px; color: #1A1F71"><b>Hi, I'm John!</b></h1>
 
-            <h1 style="font-size: 60px;"><b>Hi, I'm John!</b></h1>
-
-            <div class="row">
-                <div class="column profile-inner-left" style="margin-top: 40px;"> 
-                    <b style="font-size: 24px;">About Me</b> <br><br>
-                    [Intro]
-                </div>
-
-                <div class="column profile-inner-filler" style="margin-top: 20px;">  </div>
-
-                <div class="column profile-inner-right" style="margin-top: 40px;"> 
-                    <b style="font-size: 24px;">Social Links</b> <br><br>
-                    <div style="margin-left: 2px;">
-                        <i class="fa fa-linkedin-square"></i> &nbsp;&nbsp; <a href="https://www.linkedin.com/in/johnjhlee/">johnjhlee</a> <br> <br>
-                        <i class="fa fa-github"></i> &nbsp;&nbsp; <a href="https://github.com/johnlee-jh">johnlee-jh</a> <br> <br>
-                        <i class="fa fa-envelope"></i> &nbsp;&nbsp; leejohn24@berkeley.edu
-                    </div>
-                </div>
             </div>
+        </div>
+        <div class="column profile-right" style="margin-top: 50px;"></div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="row">
+        <div class="column profile-left" style="margin-top: 50px;"></div>
+
+        <div class="column profile-middle"> 
+            <i class="fa fa-linkedin-square"></i> &nbsp;&nbsp; <a href="https://www.linkedin.com/in/johnjhlee/">johnjhlee</a> <br> <br>
+            <i class="fa fa-github"></i> &nbsp;&nbsp; <a href="https://github.com/johnlee-jh">johnlee-jh</a> <br> <br>
+            <i class="fa fa-envelope"></i> &nbsp;&nbsp; leejohn24@berkeley.edu
 
         </div>
+        <div class="column profile-right" style="margin-top: 50px;"></div>
     </div>
-  </div>
-
     <!-- Skills-->
+
+    <div class="row">
+        <div class="column profile-left" style="margin-top: 50px;"></div>
+
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
+            test
+            
+        </div>
+        <div class="column profile-right" style="margin-top: 50px;"></div>
+    </div>
+
+
     <div class="w3-container" id="education" style="margin-top:50px">
         <div style="margin-top:50px"></div>
         <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Skills</b></h1>
@@ -231,11 +245,11 @@ body {font-size:16px;}
 
     </div>
 
-  </div>
+</div>
 
 
-  <!-- Education -->
-  <div class="w3-container" id="education" style="margin-top:50px">
+<!-- Education -->
+<div class="w3-container" id="education" style="margin-top:50px">
     <div style="margin-top:50px"></div>
     <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Education</b></h1>
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
@@ -274,10 +288,10 @@ body {font-size:16px;}
         </div>
     </div>
 
-  </div>
-  
-  <!-- Projects -->
-  <div class="w3-container" id="projects" style="margin-top:50px">
+</div>
+
+<!-- Projects -->
+<div class="w3-container" id="projects" style="margin-top:50px">
     <div style="margin-top:50px"></div>
     <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Projects</b></h1>
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
@@ -302,7 +316,7 @@ body {font-size:16px;}
                 <div class="w3-container">
                 <h3>Personal Website</h3>
                 <p class="w3-opacity">Aug 2020</p>
-                <p>Responsive personal website (this) programmed with W3 CSS package, HTML, and JavaScript</p> <br>
+                <p>Responsive personal website (this!) programmed with W3 CSS package, HTML, and JavaScript</p> <br>
                 <br><br>
                 </div>
             </div>
@@ -348,10 +362,10 @@ body {font-size:16px;}
     <div style="text-align: right; font-size: 12px; color: grey;">
         <p style="margin-top: 0px;">Images are demonstrations of each project</p>
     </div>
-  </div>
+</div>
 
-  <!-- Experience -->
-  <div class="w3-container" id="experience" style="margin-top:50px">
+<!-- Experience -->
+<div class="w3-container" id="experience" style="margin-top:50px">
     <div style="margin-top:50px"></div>
     <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Experience</b></h1>
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
@@ -360,7 +374,7 @@ body {font-size:16px;}
         <div class="column exp-left3" style="margin-top: 20px;">
             <div style="margin-top: 15px;">
             <b>May 2020 - Present</b> <br>
-            <n style="color: grey;">Remote</n> <br><br>
+            <n style="color: grey;">Remote</n>
             </div>
         </div>
         <div class="column exp-middle3" style="margin-top: 20px; background-color: #e8e8e8; border-radius: 10px;">
@@ -380,7 +394,7 @@ body {font-size:16px;}
         <div class="column exp-left3" style="margin-top: 20px;">
             <div style="margin-top: 15px;">
             <b>Jan 2020 - May 2020</b> <br>
-            <n style="color: grey;">Berkeley, California, USA</n> <br><br>
+            <n style="color: grey;">Berkeley, California, USA</n>
             </div>
         </div>
         <div class="column exp-middle3" style="margin-top: 20px; background-color: #ededed; border-radius: 10px;">
@@ -439,10 +453,10 @@ body {font-size:16px;}
         <div class="column exp-right3" style="margin-top: 20px;"></div>
     </div>
 
-  </div>
+</div>
 
-  <!-- Research -->
-  <div class="w3-container" id="research" style="margin-top:50px">
+<!-- Research -->
+<div class="w3-container" id="research" style="margin-top:50px">
     <div style="margin-top:50px"></div>
     <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Research</b></h1>
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
@@ -493,7 +507,7 @@ body {font-size:16px;}
                     <div>
                         <button id="abs2" onclick="abstract2()">Show Abstract</button>
                         <a style="margin-left: 20px; text-decoration: none;" href="https://arxiv.org/abs/1802.09947">
-                           <i class="fa fa-external-link"></i> View Paper</a> 
+                            <i class="fa fa-external-link"></i> View Paper</a> 
                     </div>
                     <div id="abstract2" style="display: none;">
                         <br>
@@ -589,10 +603,10 @@ body {font-size:16px;}
 
         </div>
     </div>
-  </div>
+</div>
 
-  <!-- Honors -->
-  <div class="w3-container" id="honors" style="margin-top:50px">
+<!-- Honors -->
+<div class="w3-container" id="honors" style="margin-top:50px">
     <div style="margin-top:50px"></div>
     <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Honors</b></h1>
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
@@ -611,10 +625,14 @@ body {font-size:16px;}
             Selected as one of 10 students out of all Korean high-school graduates who matriculate into foreign universities.
         </p>
     </div>
+</div>
+
+<!-- End of Content-->
   </div>
 
+    </div>
 
-
+    <div class="remove-column main-right" style="margin-top: 10px;"></div>
 </div>
 
 <!-- Footer -->
