@@ -71,9 +71,9 @@ body {font-size:16px;}
   position: absolute;
   width: 4px;
   background-color: #24305E;
-  top: 0;
-  bottom: 0;
-  left: 1.525%;
+  top: 20px;
+  bottom: 25px;
+  left: 1.3%;
   margin-left: -3px;
 }
 
@@ -159,9 +159,9 @@ body {font-size:16px;}
 .remove-column {
     float: left;
 }
-.main-left {width: 28.9%;}
-.main-middle {width: 60%;}
-.main-right {width: 11.1%;}
+.main-left {width: 23.9%;}
+.main-middle {width: 70%;}
+.main-right {width: 6.1%;}
 
 .profile-left {width: 5%;}
 .profile-middle {width: 90%}
@@ -213,7 +213,13 @@ body {font-size:16px;}
     clear: both;
 }
 
-@media screen and (max-width: 900px) {
+.remove-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1200px) {
   .column {
     width: 100%;
   }
@@ -221,13 +227,20 @@ body {font-size:16px;}
     width: 0%;
     display: none;
   }
+  .remove-row {
+    width: 0%;
+    display: none;
+  }
 }
+
+@media (min-width:1200px){.w3-modal-content{width:1200px}.w3-john-hide-large{display:none!important}.w3-sidebar.w3-john-collapse{display:block!important}}
+@media (max-width:1200px){.w3-sidebar.w3-john-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
 
 </style>
 <body>
 
 <!-- Table of Contents/Sidebar -->
-<nav class="w3-sidebar w3-collapse w3-john-color w3-top w3-large w3-padding" style="z-index:3;width:17.8vw; min-width: 250px; font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-john-collapse w3-john-color w3-top w3-large w3-padding" style="z-index:3;width:17.8vw; font-weight:bold;" id="mySidebar"><br>
   <div class="w3-container">
     <h3 class="w3-padding-64" style="margin-top: 30px;"><b>Contents<br></b></h3>
   </div>
@@ -242,7 +255,7 @@ body {font-size:16px;}
 </nav>
 
 <!-- Mobile Table of Contents -->
-<header class="w3-container w3-top w3-hide-large w3-john-color w3-xlarge w3-padding">
+<header class="w3-container w3-top w3-john-hide-large w3-john-color w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-john-color w3-margin-right" onclick="w3_open()" style="font-size: 16px;">☰ &nbsp;&nbsp; Contents</a>
   <span></span>
 </header>
@@ -250,18 +263,18 @@ body {font-size:16px;}
 <!-- Mobile Overlay -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<div style="background-color: #A8D0E6; height: 70px;"></div>
-<div class="row" style="background-color: #A8D0E6;">
+<div class="remove-row" style="background-color: #95a7b1; height: 70px;"></div>
+<div class="row" style="background-color: #95a7b1;">
     <div class="remove-column main-left" style="margin-top: 10px;"></div>
 
-    <div class="column main-middle" style="background-color:white; border-radius: 15px;">
+    <div class="column main-middle" style="background-color:white; border-top-left-radius: 15px; border-top-right-radius: 15px;">
 
 <!-- Start of Content-->
 <div class="w3-main">
 
     <!-- Introduction -->
     <div class="row">
-        <div class="column profile-left" style="margin-top: 50px;"></div>
+        <div class="column profile-left" style="margin-top: 1px;"></div>
 
         <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #24305E;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
@@ -288,57 +301,62 @@ body {font-size:16px;}
                         <br> <br>
                         <i class="fa fa-envelope" style="font-size: 20px;"> &nbsp;&nbsp; </i>
                         leejohn24@berkeley.edu
+                        <br><br><br>
                     </div>
 
                 </div>
                 <div style="margin-top: 30px;">
                 <b>Frequently used tools</b>
                 <p>
-                    <div class="tooltip">
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-java-plain colored" style="font-size: 60px;" title="Java"></i>
                         <span class="tooltiptext">Java (8.0)</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    <!--
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-c-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">C (18)</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    -->
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-python-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">Python (3.8)</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-git-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">Git</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-html5-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">HTML (5)</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-css3-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">CSS (3)</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-bootstrap-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">Bootstrap</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    <!--
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-sass-original colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">SASS</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    -->
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-javascript-plain" style="font-size: 60px;"></i>
                         <span class="tooltiptext">JavaScript</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-npm-original-wordmark colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">NPM</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-visualstudio-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">Visual Studio Code</span>
                     </div>&nbsp;
-                    <div class="tooltip">
+                    <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-intellij-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">IntelliJ</span>
                     </div>&nbsp;
@@ -347,14 +365,14 @@ body {font-size:16px;}
             </div>
             
         </div>
-        <div class="column profile-right" style="margin-top: 50px;"></div>
+        <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
 
     <!-- Education -->
     <div class="row" id="education">
-        <div class="column profile-left" style="margin-top: 50px;"></div>
+        <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;border-left: 5px solid #F78888;"> 
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #F3D250;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="color: #1A1F71; font-size: 32px;"><b>Education</b></h1>
 
@@ -362,25 +380,27 @@ body {font-size:16px;}
                     <div class="column edu-left">
                         <b style="font-size: 22px;">University of California, Berkeley</b> <br>
                         <div class="row" style="margin-top: 20px;">
-                            <div class="column college-left">
-                                <img src="cal-logo.png" alt="cal-logo" style="width:100%">
+                            <div class="static-column college-left">
+                                <img src="cal-logo.png" alt="cal-logo" style="width:100%;">
                             </div>
-                            <div class="column college-middle">
+                            <div class="static-column college-middle">
                                 &nbsp;&nbsp;&nbsp;&nbsp;<n><i>B.A. Computer Science and Physics</i></n><br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;<n>Aug 2019 - May 2023 <n style="color: slategrey">(Sophomore)</n></n> <br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;<n>GPA: 3.515/4.0 </n> <br>
+                                <br>
                             </div>
                         </div>
                         <br>
                         <b style="font-size: 22px;">CheongShim International Academy</b> <br>
                         <div class="row" style="margin-top: 20px;">
-                            <div class="column college-left">
+                            <div class="static-column college-left">
                                 <img src="csia-logo.png" alt="csia-logo" style="width:100%">
                             </div>
-                            <div class="column college-middle">
+                            <div class="static-column college-middle">
                                 &nbsp;&nbsp;&nbsp;&nbsp;<n><i>High School Diploma</i></n><br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;<n>Mar 2016 - Feb 2019</n> <br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;<n>GPA: 4.95/5.0 </n> <br>
+                                <br>
                             </div>
                         </div>
                         <br>
@@ -390,23 +410,24 @@ body {font-size:16px;}
                         &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Algorithms<br>
                         &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Data Structures <br>
                         &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Computer Architecture <br>
-                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Discrete Mathematics & Probability <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Discrete Mathematics <br>
                         &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Designing Information Systems <br>
                         &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Mechanics <br>
                         &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Introduction to Logic <br>
+                        <br><br>
                     </div>
                 </div>
             </div>
             
         </div>
-        <div class="column profile-right" style="margin-top: 50px;"></div>
+        <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
 
     <!-- Experience -->
-    <div class="row">
-        <div class="column profile-left" style="margin-top: 50px;"></div>
+    <div class="row" id="experience">
+        <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;border-left: 5px solid #F3D250;"> 
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #F78888;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="color: #1A1F71; font-size: 32px;"><b>Experience</b></h1>
                 <div class="timeline">
@@ -415,7 +436,8 @@ body {font-size:16px;}
                         Mar 2020 - Aug 2020
                         <div style="background-color: #d6ecf3; border-radius: 10px;">
                             <div style="margin-left: 10px; margin-right: 10px;">
-                                <n style="font-size: 24px;">IPMD Inc.</n>
+                                <br>
+                                <n style="font-size: 24px;">IPMD Inc.</n> <br>
                                 Software Engineering Intern
                                 <p>&nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Built a responsive testing website for M (emotion-detecting AI) using HTML/CSS with Bootstrap <br>
                                     &nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Implemented PayPal donate and Google/Facebook sign-in features within the website through JS <br>
@@ -429,7 +451,8 @@ body {font-size:16px;}
                         Jan 2020 - May 2020
                         <div style="background-color: #deeff5; border-radius: 3px;">
                             <div style="margin-left: 10px; margin-right: 10px;">
-                                <n style="font-size: 24px;">IEEE Student Branch at UC Berkeley</n>
+                                <br>
+                                <n style="font-size: 24px;">IEEE Student Branch at UC Berkeley</n> <br>
                                 Website Officer
                                 <p>&nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Created the course website for EE198 (Hands-on PCB Engineering) using Handlebars and HTML <br>
                                     &nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Improved the UI/UX of the organization’s website (ieee.berkeley.edu) through Ghost and Sass <br>
@@ -445,7 +468,8 @@ body {font-size:16px;}
                             Mar 2017 - Feb 2019
                         <div style="background-color: #e6f3f8; border-radius: 3px;">
                             <div style="margin-left: 10px; margin-right: 10px;">
-                                <n style="font-size: 24px;">Pacific Engineering Club</n>
+                                <br>
+                                <n style="font-size: 24px;">Pacific Engineering Club</n> <br>
                                 Founder & President
                                 <p>&nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Engineered tesla valve applications to regulate water pressure and reduce crop damage in farms <br>
                                     &nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Received $1250 funding from the Ministry of Education to implement the product in Gapyeong county and 
@@ -458,20 +482,20 @@ body {font-size:16px;}
             </div>
             
         </div>
-        <div class="column profile-right" style="margin-top: 50px;"></div>
+        <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
 
     <!-- Projects -->
-    <div class="row">
-        <div class="column profile-left" style="margin-top: 50px;"></div>
+    <div class="row" id="projects">
+        <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #7284d3;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="color: #1A1F71; font-size: 32px;"><b>Projects</b></h1>
             </div>
             <div class="w3-row-padding" style="margin-top: 30px;">
                 <div class="w3-col m4 w3-margin-bottom">
-                <div class="w3-light-grey">
+                <div style="background-color: #D1E8E2;">
                     <img src="in-progress.png" alt="type-oh" style="width:100%">
                     <div class="w3-container">
                     <h3>Type-oh!</h3>
@@ -483,7 +507,7 @@ body {font-size:16px;}
                 </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                    <div class="w3-light-grey">
+                    <div style="background-color: #FBE8A6;">
                         <img src="in-progress.png" alt="personal-website" style="width:100%">
                         <div class="w3-container">
                         <h3>Personal Website</h3>
@@ -495,7 +519,7 @@ body {font-size:16px;}
                     </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                <div class="w3-light-grey">
+                <div style="background-color: #EDC7B7;">
                     <img src="mini-git.png" alt="mini-git" style="width:100%">
                     <div class="w3-container">
                     <h3>Mini Git</h3>
@@ -508,7 +532,7 @@ body {font-size:16px;}
             </div>
             <div class="w3-row-padding">
                 <div class="w3-col m4 w3-margin-bottom">
-                <div class="w3-light-grey">
+                <div style="background-color: #B4DFE5; max-height: 500px;">
                     <img src="loa-ai.png" alt="loa-ai" style="width:100%">
                     <div class="w3-container">
                     <h3>Lines of Action AI</h3>
@@ -520,55 +544,72 @@ body {font-size:16px;}
                 </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                <div class="w3-light-grey">
+                <div style="background-color: #C5CBE3;">
                     <img src="in-progress.png" alt="enigma" style="width:100%">
                     <div class="w3-container">
                     <h3>Enigma Cipher</h3>
                     <p class="w3-opacity">Feb 2020</p>
-                    <p>Text encrpytion & decryption software that mimics the rotor, reflector, and plugboard mechanics of an Enigma machine</p>
+                    <p>Text encrpytion & decryption software that mimics the rotor/plugboard mechanics of an Enigma machine</p>
                     <br><br>
                     </div>
                 </div>
                 </div>
-
-                <div class="w3-col m4 w3-margin-bottom">
-                    <div class="w3-light-grey">
-                        [github icon]
-                        View in Github
-                    </div>
-                    </div>
-            </div>
-            <div style="text-align: right; font-size: 12px; color: grey;">
-                <p style="margin-top: 0px;">Images are demonstrations of each project</p>
             </div>
         </div>
-        <div class="column profile-right" style="margin-top: 50px;"></div>
+        <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
 
-    <!-- TEMPLATE -->
-    <div class="row">
-        <div class="column profile-left" style="margin-top: 50px;"></div>
+    <!-- Research -->
+    <div class="row" id="research">
+        <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #99CED3;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
-                <h1 style="color: #1A1F71; font-size: 32px;"><b>stuff</b></h1>
+                <h1 style="color: #1A1F71; font-size: 32px;"><b>Research</b></h1>
             </div>
             
         </div>
-        <div class="column profile-right" style="margin-top: 50px;"></div>
+        <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
 
-    <!-- TEMPLATE -->
-    <div class="row">
-        <div class="column profile-left" style="margin-top: 50px;"></div>
+    <!-- Honors -->
+    <div class="row" id="honors">
+        <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #564F6F;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
-                <h1 style="color: #1A1F71; font-size: 32px;"><b>Experience</b></h1>
+                <h1 style="color: #1A1F71; font-size: 32px;"><b>Honors</b></h1>
+                <div class="row">
+                    <div class="column research-right" style="margin-top: 20px;">
+                        <div style="background-color: #D1D7E0;">
+                            <div class="w3-container">
+                                <b style="font-size: 20px;">Leadership Award</b> <br>
+                                <n style="color: slategrey;"> Mar 2020 </n>
+                                <p style="margin-top: 0px;"> 
+                                    Awarded $2000 from the Cal Alumni Association for demonstrating innovative, initiative-driven leadership 
+                                    impacting academic, work, or community environments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column research-filler" style="margin-top: 20px;"></div>
+        
+                    <div class="column research-right" style="margin-top: 20px;">
+                        <div style="background-color: #D1D7E0;">
+                            <div class="w3-container">
+                                <b style="font-size: 20px;">IKEF Scholarship</b> <br>
+                                <n style="color: slategrey;"> Jul 2020 </n>
+                                <p style="margin-top: 0px;"> 
+                                    Awarded a full-ride to college from IKEF for demonstrating Challenge, Creativity, and Contribution in sciences. <br>
+                                    Selected as one of 10 students out of all Korean high-school graduates who matriculate into foreign universities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-        </div>
-        <div class="column profile-right" style="margin-top: 50px;"></div>
+        <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
 
 <!-- Research -->
@@ -716,43 +757,16 @@ body {font-size:16px;}
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-</div>
-
-<!-- Honors -->
-<div class="w3-container" id="honors" style="margin-top:50px">
-    <div style="margin-top:50px"></div>
-    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Honors</b></h1>
-    <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
-    <div style="width: 70%;">
-        <b style="font-size: 20px;">Leadership Award</b> <br>
-        <n style="color: slategrey;"> Mar 2020 </n>
-        <p style="margin-top: 0px;"> 
-            Awarded $2000 from the Cal Alumni Association for demonstrating innovative, initiative-driven leadership impacting academic, work, or community environments.
-        </p>
-    </div>
-    <div style="margin-top: 40px; width: 80%;">
-        <b style="font-size: 20px;">IKEF Scholarship</b> <br>
-        <n style="color: slategrey;"> Jul 2020 </n>
-        <p style="margin-top: 0px;"> 
-            Awarded a full-ride to college from IKEF for demonstrating Challenge, Creativity, and Contribution in sciences. <br>
-            Selected as one of 10 students out of all Korean high-school graduates who matriculate into foreign universities.
-        </p>
-    </div>
+    <br><br><br>
 </div>
 
 <!-- End of Content-->
-  </div>
 
     </div>
 
     <div class="remove-column main-right" style="margin-top: 10px;"></div>
-</div>
-
-<div style="width: 100%; background-color: #A8D0E6; height: 75px;">
-
 </div>
 
 <!-- Footer -->
