@@ -3,7 +3,7 @@
 Credits:
 Based on W3 responsive CSS package & layout. 
 Additional CSS and JavaScript implemented by Junghwan(John) Lee.
-Content imported from the previous version of the website (archived in the same domain).
+Content imported from the previous version of the website (privately archived in the same domain).
 -->
 <html lang="en">
 <title>John's Personal Website</title>
@@ -13,15 +13,20 @@ Content imported from the previous version of the website (archived in the same 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
-.w3-custom,.w3-hover-custom:hover{
+.w3-john-color,.w3-hover-john-color:hover{
     color:#fff!important;background-color:#4F758B!important
 }
 .column {
+    float: left;
+}
+.static-column {
     float: left;
 }
 .profile-left {width: 20%;}
@@ -31,8 +36,11 @@ body {font-size:16px;}
 .profile-inner-filler {width: 10%;}
 .profile-inner-right {width: 30%;}
 
-.skill-filler {width: 1%;}
-.skill-space {width: 9%;}
+.skill-left {width: 50%;}
+.skill-right {width: 50%;}
+
+.skill-filler {width: 2%;}
+.skill-space {width: 23%;}
 
 .edu-left {width: 36%;}
 .edu-filler1 {width: 3%;}
@@ -76,7 +84,7 @@ body {font-size:16px;}
 <body>
 
 <!-- Table of Contents/Sidebar -->
-<nav class="w3-sidebar w3-collapse w3-custom w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-john-color w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <div class="w3-container">
     <h3 class="w3-padding-64" style="margin-top: -30px;"><b>Contents<br></b></h3>
   </div>
@@ -98,8 +106,8 @@ body {font-size:16px;}
 </nav>
 
 <!-- Mobile Table of Contents -->
-<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()" style="font-size: 16px;">☰ &nbsp;&nbsp; Contents</a>
+<header class="w3-container w3-top w3-hide-large w3-john-color w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-john-color w3-margin-right" onclick="w3_open()" style="font-size: 16px;">☰ &nbsp;&nbsp; Contents</a>
   <span></span>
 </header>
 
@@ -144,12 +152,88 @@ body {font-size:16px;}
     </div>
 
     <br><br>
-    <n style="color:red; font-size: 24px;">Website under construction (will be finished soon though!)</n>
+    <n style="color:red; font-size: 24px;">Website under construction (will be finished soon though!)</n> <br>
+
+    <div style="font-size: 30px;">
+        <b>Skills:</b>
+    </div>
+
+    <div class="row" style="text-align: center; font-size: 20px;">
+        <div class="column skill-left" style="margin-top: 10px;">
+            Programming
+            <div class="row">
+                <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
+    
+                <div class="static-column skill-space" style="margin-top: 10px;">
+                    <i class="devicon-java-plain colored" style="font-size: 120px;"></i> <br>
+                    Java
+                </div>
+
+                <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
+    
+                <div class="static-column skill-space" style="margin-top: 10px;">
+                    <i class="devicon-python-plain colored" style="font-size: 120px;"></i> <br>
+                    Python
+                </div>
+
+                <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
+    
+                <div class="static-column skill-space" style="margin-top: 10px;">
+                    <i class="devicon-c-plain colored" style="font-size: 120px;"></i> <br>
+                    C
+                </div>
+
+                <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
+    
+                <div class="static-column skill-space" style="margin-top: 10px;">
+                    <i class="devicon-git-plain colored" style="font-size: 120px;"></i> <br>
+                    Git
+                </div>
+            </div>
+        </div>
+
+        <div class="column skill-right" style="margin-top: 10px;">
+            Web Development
+            <div class="row">
+                <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
+    
+                <div class="static-column skill-space" style="margin-top: 10px;">
+                    <i class="devicon-html5-plain colored" style="font-size: 120px;"></i> <br>
+                    HTML
+                </div>
+
+                <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
+    
+                <div class="static-column skill-space" style="margin-top: 10px;">
+                    <i class="devicon-css3-plain colored" style="font-size: 120px;"></i> <br>
+                    CSS
+                </div>
+
+                <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
+    
+                <div class="static-column skill-space" style="margin-top: 10px;">
+                    <i class="devicon-javascript-plain colored" style="font-size: 120px;"></i> <br>
+                    JavaScript
+                </div>
+
+                <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
+    
+                <div class="static-column skill-space" style="margin-top: 10px;">
+                    <i class="devicon-mysql-plain colored" style="font-size: 120px;"></i> <br>
+                    SQL
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
   </div>
 
 
   <!-- Education -->
-  <div class="w3-container" id="education" style="margin-top:100px">
+  <div class="w3-container" id="education" style="margin-top:50px">
+    <div style="margin-top:50px"></div>
     <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Education</b></h1>
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
 
@@ -204,7 +288,8 @@ body {font-size:16px;}
   </div>
   
   <!-- Projects -->
-  <div class="w3-container" id="projects" style="margin-top:100px">
+  <div class="w3-container" id="projects" style="margin-top:50px">
+    <div style="margin-top:50px"></div>
     <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Projects</b></h1>
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
 
@@ -272,7 +357,8 @@ body {font-size:16px;}
   </div>
 
   <!-- Experience -->
-  <div class="w3-container" id="experience" style="margin-top:100px">
+  <div class="w3-container" id="experience" style="margin-top:50px">
+    <div style="margin-top:50px"></div>
     <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Experience</b></h1>
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
     
@@ -362,7 +448,8 @@ body {font-size:16px;}
   </div>
 
   <!-- Research -->
-  <div class="w3-container" id="research" style="margin-top:100px">
+  <div class="w3-container" id="research" style="margin-top:50px">
+    <div style="margin-top:50px"></div>
     <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Research</b></h1>
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
     <div>
@@ -511,7 +598,8 @@ body {font-size:16px;}
   </div>
 
   <!-- Honors -->
-  <div class="w3-container" id="honors" style="margin-top:100px">
+  <div class="w3-container" id="honors" style="margin-top:50px">
+    <div style="margin-top:50px"></div>
     <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Honors</b></h1>
     <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
     <div style="width: 70%;">
