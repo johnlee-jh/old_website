@@ -70,7 +70,7 @@ body {font-size:16px;}
   content: '';
   position: absolute;
   width: 4px;
-  background-color: #F4C336;
+  background-color: #24305E;
   top: 0;
   bottom: 0;
   left: 1.525%;
@@ -179,9 +179,12 @@ body {font-size:16px;}
 .skill-filler {width: 1%;}
 .skill-space {width: 23%;}
 
-.edu-left {width: 47%;}
+.edu-left {width: 60%;}
 .edu-filler1 {width: 3%;}
-.edu-middle {width: 50%;}
+.edu-middle {width: 37%;}
+
+.college-left {width: 20%;}
+.college-middle {width: 70%;}
 
 .exp-left1 {width: 0%;}
 .exp-middle1 {width: 70%;}
@@ -230,10 +233,9 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block">
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Profile</a> 
-    <a href="index.html#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Skills</a> 
     <a href="index.html#education" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Education</a> 
-    <a href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Projects</a> 
     <a href="index.html#experience" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Experience</a>
+    <a href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Projects</a> 
     <a href="index.html#research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Research</a>
     <a href="index.html#honors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Honors</a>
   </div>
@@ -266,20 +268,30 @@ body {font-size:16px;}
                 <h1 style="font-size: 48px; color: #1A1F71;"><b>Hi, I'm John!</b></h1>
 
                 <div class="row">
-                    <div class="column intro-left" style="margin-top: 1px;">
-                        <p style="color: grey;">Introduction <br><br><br><br><br> Introduction</p>
+                    <div class="column intro-left" style="margin-top: 0px;">
+                        <p style="color: grey;">Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction
+                            Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction
+                            Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction
+                            Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction
+                            Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction
+                            Introduction Introduction Introduction Introduction Introduction </p>
                     </div>
                     
-                    <div class="column intro-filler" style="margin-top: 1px;"></div>
+                    <div class="column intro-filler" style="margin-top: 50px;"></div>
 
-                    <div class="column intro-right" style="margin-top: 1px;">
-                        <i class="fa fa-linkedin-square" style="font-size: 20px;"></i> &nbsp;&nbsp; <a href="https://www.linkedin.com/in/johnjhlee/">Linkedin</a> <br> <br>
-                        <i class="fa fa-github"></i> &nbsp;&nbsp; <a href="https://github.com/johnlee-jh">Github</a> <br> <br>
-                        <i class="fa fa-envelope">&nbsp;&nbsp; &nbsp;&nbsp;</i>leejohn24@berkeley.edu
+                    <div class="column intro-right" style="margin-top: 20px; text-transform: none;">
+                        <i class="fa fa-linkedin-square" style="font-size: 20px;"></i> &nbsp;&nbsp; 
+                        <a href="https://www.linkedin.com/in/johnjhlee/">Linkedin</a> 
+                        <br> <br>
+                        <i class="fa fa-github" style="font-size: 20px;"></i> &nbsp;&nbsp; 
+                        <a href="https://github.com/johnlee-jh">Github</a> 
+                        <br> <br>
+                        <i class="fa fa-envelope" style="font-size: 20px;"> &nbsp;&nbsp; </i>
+                        leejohn24@berkeley.edu
                     </div>
 
                 </div>
-
+                <div style="margin-top: 30px;">
                 <b>Frequently used tools</b>
                 <p>
                     <div class="tooltip">
@@ -331,43 +343,57 @@ body {font-size:16px;}
                         <span class="tooltiptext">IntelliJ</span>
                     </div>&nbsp;
                     </p>
+                </div>
             </div>
             
         </div>
         <div class="column profile-right" style="margin-top: 50px;"></div>
     </div>
 
-    <!-- Education-->
+    <!-- Education -->
     <div class="row" id="education">
         <div class="column profile-left" style="margin-top: 50px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
-            <div class="row">
-                <div class="column edu-left" style="margin-top: 10px;">
-                    <div style="margin-top: 15px; margin-left: 15px;">
-                        <b style="font-size: 24px;">University of California, Berkeley</b> <br>
-                        <i>B.A.</i> in Computer Science and Physics <br>
-                        <n style="color: grey;">GPA: 3.515/4.0 </n> <br>
-                        Aug 2019 - May 2023 (Sophomore) <br>
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;border-left: 5px solid #F78888;"> 
+            <div style="margin-left: 20px; margin-top: 15px;">
+                <h1 style="color: #1A1F71; font-size: 32px;"><b>Education</b></h1>
+
+                <div class="row" style="margin-top: 20px;">
+                    <div class="column edu-left">
+                        <b style="font-size: 22px;">University of California, Berkeley</b> <br>
+                        <div class="row" style="margin-top: 20px;">
+                            <div class="column college-left">
+                                <img src="cal-logo.png" alt="cal-logo" style="width:100%">
+                            </div>
+                            <div class="column college-middle">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n><i>B.A. Computer Science and Physics</i></n><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n>Aug 2019 - May 2023 <n style="color: slategrey">(Sophomore)</n></n> <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n>GPA: 3.515/4.0 </n> <br>
+                            </div>
+                        </div>
+                        <br>
+                        <b style="font-size: 22px;">CheongShim International Academy</b> <br>
+                        <div class="row" style="margin-top: 20px;">
+                            <div class="column college-left">
+                                <img src="csia-logo.png" alt="csia-logo" style="width:100%">
+                            </div>
+                            <div class="column college-middle">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n><i>High School Diploma</i></n><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n>Mar 2016 - Feb 2019</n> <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n>GPA: 4.95/5.0 </n> <br>
+                            </div>
+                        </div>
+                        <br>
                     </div>
-                    <div style="margin-top: 15px; margin-left: 15px;">
-                        <b style="font-size: 20px;">CheongShim International Academy</b> <br>
-                        <i>High School Diploma</i> <br>
-                        GPA: 4.95/5.0 <br>
-                        Mar 2016 - Feb 2019 <br>
-                    </div>
-                </div>
-                <div class="column edu-middle" style="margin-top: 10px;">
-                    <div style="margin-top: 15px;">
-                        <b>Relevant Coursework:</b> <br>
-                        &nbsp;&nbsp; <b>CS 61A</b>: Structure and Interpretation of Computer Programs <br>
-                        &nbsp;&nbsp; <b>CS 61B</b>: Data Structures <br>
-                        &nbsp;&nbsp; <b>CS 61C</b>: Computer Architectures <br>
-                        &nbsp;&nbsp; <b>CS 70 </b>: Discrete Mathematics & Probability <br>
-                        &nbsp;&nbsp; <b>Physics 7A</b>: Physics for Scientists and Engineers - Mechanics <br>
-                        &nbsp;&nbsp; <b>EECS 16A</b>: Designing Information Devices and Systems 1 <br>
-                        &nbsp;&nbsp; <b>Philos 12A</b>: Introduction to Logic <br>
-                        
+                    <div class="column edu-middle" style="margin-top: 2px;">
+                        <b>Relevant Coursework</b> <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Algorithms<br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Data Structures <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Computer Architecture <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Discrete Mathematics & Probability <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Designing Information Systems <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Mechanics <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Introduction to Logic <br>
                     </div>
                 </div>
             </div>
@@ -380,16 +406,16 @@ body {font-size:16px;}
     <div class="row">
         <div class="column profile-left" style="margin-top: 50px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;border-left: 5px solid #F3D250;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="color: #1A1F71; font-size: 32px;"><b>Experience</b></h1>
                 <div class="timeline">
                     <div class="container right">
                       <div class="content">
                         Mar 2020 - Aug 2020
-                        <div style="background-color: white; border-radius: 3px;">
+                        <div style="background-color: #d6ecf3; border-radius: 10px;">
                             <div style="margin-left: 10px; margin-right: 10px;">
-                                <h3>IPMD Inc.</h3>
+                                <n style="font-size: 24px;">IPMD Inc.</n>
                                 Software Engineering Intern
                                 <p>&nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Built a responsive testing website for M (emotion-detecting AI) using HTML/CSS with Bootstrap <br>
                                     &nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Implemented PayPal donate and Google/Facebook sign-in features within the website through JS <br>
@@ -401,9 +427,9 @@ body {font-size:16px;}
                     <div class="container right">
                       <div class="content">
                         Jan 2020 - May 2020
-                        <div style="background-color: white; border-radius: 3px;">
+                        <div style="background-color: #deeff5; border-radius: 3px;">
                             <div style="margin-left: 10px; margin-right: 10px;">
-                                <h3>IEEE Student Branch at UC Berkeley</h3>
+                                <n style="font-size: 24px;">IEEE Student Branch at UC Berkeley</n>
                                 Website Officer
                                 <p>&nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Created the course website for EE198 (Hands-on PCB Engineering) using Handlebars and HTML <br>
                                     &nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Improved the UI/UX of the organization’s website (ieee.berkeley.edu) through Ghost and Sass <br>
@@ -417,9 +443,9 @@ body {font-size:16px;}
                     <div class="container right">
                         <div class="content">
                             Mar 2017 - Feb 2019
-                        <div style="background-color: white; border-radius: 3px;">
+                        <div style="background-color: #e6f3f8; border-radius: 3px;">
                             <div style="margin-left: 10px; margin-right: 10px;">
-                                <h3>Pacific Engineering Club</h3>
+                                <n style="font-size: 24px;">Pacific Engineering Club</n>
                                 Founder & President
                                 <p>&nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Engineered tesla valve applications to regulate water pressure and reduce crop damage in farms <br>
                                     &nbsp;&nbsp;•	&nbsp;&nbsp;&nbsp;&nbsp;Received $1250 funding from the Ministry of Education to implement the product in Gapyeong county and 
@@ -435,19 +461,6 @@ body {font-size:16px;}
         <div class="column profile-right" style="margin-top: 50px;"></div>
     </div>
 
-    <!-- TEMPLATE -->
-    <div class="row">
-        <div class="column profile-left" style="margin-top: 50px;"></div>
-
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
-            <div style="margin-left: 20px; margin-top: 15px;">
-                <h1 style="color: #1A1F71; font-size: 32px;"><b>Experience</b></h1>
-            </div>
-            
-        </div>
-        <div class="column profile-right" style="margin-top: 50px;"></div>
-    </div>
-
     <!-- Projects -->
     <div class="row">
         <div class="column profile-left" style="margin-top: 50px;"></div>
@@ -456,7 +469,7 @@ body {font-size:16px;}
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="color: #1A1F71; font-size: 32px;"><b>Projects</b></h1>
             </div>
-            <div class="w3-row-padding">
+            <div class="w3-row-padding" style="margin-top: 30px;">
                 <div class="w3-col m4 w3-margin-bottom">
                 <div class="w3-light-grey">
                     <img src="in-progress.png" alt="type-oh" style="width:100%">
@@ -528,6 +541,32 @@ body {font-size:16px;}
             <div style="text-align: right; font-size: 12px; color: grey;">
                 <p style="margin-top: 0px;">Images are demonstrations of each project</p>
             </div>
+        </div>
+        <div class="column profile-right" style="margin-top: 50px;"></div>
+    </div>
+
+    <!-- TEMPLATE -->
+    <div class="row">
+        <div class="column profile-left" style="margin-top: 50px;"></div>
+
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
+            <div style="margin-left: 20px; margin-top: 15px;">
+                <h1 style="color: #1A1F71; font-size: 32px;"><b>stuff</b></h1>
+            </div>
+            
+        </div>
+        <div class="column profile-right" style="margin-top: 50px;"></div>
+    </div>
+
+    <!-- TEMPLATE -->
+    <div class="row">
+        <div class="column profile-left" style="margin-top: 50px;"></div>
+
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
+            <div style="margin-left: 20px; margin-top: 15px;">
+                <h1 style="color: #1A1F71; font-size: 32px;"><b>Experience</b></h1>
+            </div>
+            
         </div>
         <div class="column profile-right" style="margin-top: 50px;"></div>
     </div>
@@ -702,90 +741,6 @@ body {font-size:16px;}
             Selected as one of 10 students out of all Korean high-school graduates who matriculate into foreign universities.
         </p>
     </div>
-</div>
-
-<div class="w3-container" id="education" style="margin-top:50px">
-    <div style="margin-top:50px"></div>
-    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Skills</b></h1>
-    <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
-
-<div class="row" style="text-align: center; font-size: 20px;">
-    <div class="column skill-left" style="margin-top: 10px; background-color: #9bc4e2; border-radius: 15px;">
-        <b style="font-size: 30px;">Programming</b> <br><br>
-        <div class="row">
-            <div class="static-column skill-filler1" style="margin-top: 10px;"> </div>
-
-            <div class="static-column skill-space" style="margin-top: 10px;">
-                <i class="devicon-java-plain colored" style="font-size: 80px;"></i> <br>
-                Java <br><br>
-            </div>
-
-            <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
-
-            <div class="static-column skill-space" style="margin-top: 10px;">
-                <i class="devicon-python-plain colored" style="font-size: 80px;"></i> <br>
-                Python <br><br>
-            </div>
-
-            <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
-
-            <div class="static-column skill-space" style="margin-top: 10px;">
-                <i class="devicon-c-plain colored" style="font-size: 80px;"></i> <br>
-                C <br><br>
-            </div>
-
-            <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
-
-            <div class="static-column skill-space" style="margin-top: 10px;">
-                <i class="devicon-git-plain colored" style="font-size: 80px;"></i> <br>
-                Git <br><br>
-            </div>
-
-            <div class="static-column skill-filler1" style="margin-top: 10px;"> </div>
-        </div>
-    </div>
-
-    <div class="column skill-main-fill" style="margin-top: 10px;"></div>
-
-    <div class="column skill-right" style="margin-top: 10px; background-color: #fff192; border-radius: 15px;">
-        <b style="font-size: 30px;">Web Development</b> <br><br>
-        <div class="row">
-            <div class="static-column skill-filler1" style="margin-top: 10px;"> </div>
-
-            <div class="static-column skill-space" style="margin-top: 10px;">
-                <i class="devicon-html5-plain colored" style="font-size: 80px;"></i> <br>
-                HTML <br><br>
-            </div>
-
-            <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
-
-            <div class="static-column skill-space" style="margin-top: 10px;">
-                <i class="devicon-css3-plain colored" style="font-size: 80px;"></i> <br>
-                CSS <br><br>
-            </div>
-
-            <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
-
-            <div class="static-column skill-space" style="margin-top: 10px;">
-                <i class="devicon-javascript-plain" style="font-size: 80px;"></i> <br>
-                JavaScript <br><br>
-            </div>
-
-            <div class="static-column skill-filler" style="margin-top: 10px;"> </div>
-
-            <div class="static-column skill-space" style="margin-top: 10px;">
-                <i class="devicon-mysql-plain colored" style="font-size: 80px;"></i> <br>
-                SQL <br><br>
-            </div>
-
-            <div class="static-column skill-filler1" style="margin-top: 10px;"> </div>
-        </div>
-
-    </div>
-    <br>temp<br><br>
-
-</div>
-
 </div>
 
 <!-- End of Content-->
