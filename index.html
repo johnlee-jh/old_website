@@ -150,7 +150,7 @@ body {font-size:16px;}
 
 .topnav {
   overflow: hidden;
-  background-color: #5F6366;
+  background-color: #F76C6C;
 }
 
 .topnav a {
@@ -209,17 +209,17 @@ body {font-size:16px;}
 .remove-column {
     float: left;
 }
-.main-left {width: 12.5%;}
-.main-middle {width: 75%;}
-.main-right {width: 12.5%;}
+.main-left {width: 15%;}
+.main-middle {width: 70%;}
+.main-right {width: 15%;}
 
-.profile-left {width: 5%;}
-.profile-middle {width: 90%}
-.profile-right {width: 5%;}
+.profile-left {width: 0%;}
+.profile-middle {width: 100%}
+.profile-right {width: 0%;}
 
-.intro-left {width: 65%;}
-.intro-filler {width: 2%}
-.intro-right {width: 33%;}
+.intro-left {width: 75%;}
+.intro-filler {width: 25%}
+.intro-right {width: 0%;}
 
 .skill-left {width: 48%;}
 .skill-main-fill {width: 4%;}
@@ -229,9 +229,9 @@ body {font-size:16px;}
 .skill-filler {width: 1%;}
 .skill-space {width: 23%;}
 
-.edu-left {width: 60%;}
+.edu-left {width: 57%;}
 .edu-filler1 {width: 3%;}
-.edu-middle {width: 37%;}
+.edu-middle {width: 40%;}
 
 .college-left {width: 20%;}
 .college-middle {width: 70%;}
@@ -304,31 +304,23 @@ body {font-size:16px;}
   }
 }
 
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .remove-column {
+    width: 0%;
+    display: none;
+  }
+  .remove-row {
+    width: 0%;
+    display: none;
+  }
+}
+
 </style>
 <body>
 
-<!-- Menu -->
-
-<!-- Previous SIDEBAR
-
-<nav class="w3-sidebar w3-john-collapse w3-john-color w3-top w3-large w3-padding" style="z-index:3;width:17.8vw; font-weight:bold;" id="mySidebar"><br>
-  <div class="w3-container">
-    <h3 class="w3-padding-64" style="margin-top: 30px;"><b>Contents<br></b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Profile</a> 
-    <a href="index.html#education" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Education</a> 
-    <a href="index.html#experience" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Experience</a>
-    <a href="index.html#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Projects</a> 
-    <a href="index.html#research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Research</a>
-    <a href="index.html#honors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Honors</a>
-  </div>
-</nav>
-<header class="w3-container w3-top w3-john-hide-large w3-john-color w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-john-color w3-margin-right" onclick="w3_open()" style="font-size: 16px;">☰ &nbsp;&nbsp; Contents</a>
-  <span></span>
-</header>
- -->
 
 <!-- Overlay -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -336,10 +328,9 @@ body {font-size:16px;}
 <div class="background-box row" style="background-color: #4D6D9A;">
     <div class="remove-column main-left" style="margin-top: 10px;"></div>
 
-    <div class="column main-middle" style="background-color: #86B3D1; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+    <div class="column main-middle" style="background-color: #F8E9A1; border-top-left-radius: 15px; border-top-right-radius: 15px;">
 
-<!-- Current Top-Navigation Bar -->
-<!-- Top navigation -->
+<!-- Top navbar -->
 <div class="topnav" id="myTopnav">
     <a href="#"><b>Home</b></a>
     <a href="#projects">Projects</a>
@@ -359,36 +350,32 @@ body {font-size:16px;}
     <div class="row">
         <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="intro-box column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
+        <div class="intro-box column profile-middle" style="background-color: #f2f3f4; margin-top: 50px;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="font-size: 48px; color: #1A1F71;"><b>Hi, I'm John!</b></h1>
 
                 <div class="row">
                     <div class="column intro-left" style="margin-top: 0px;">
-                        <p style="color: grey;">Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction
-                            Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction
-                            Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction
-                            Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction
-                            Introduction Introduction Introduction Introduction Introduction Introduction Introduction Introduction
-                            Introduction Introduction Introduction Introduction Introduction </p>
+                        <p style="color: #555555; line-height: 24px;"> My full name is Junghwan Lee, and I'm a sophomore majoring in CS + Physics at UC Berkeley.
+                            I've had a lifelong interest in using mathematical principles to interact with the world, which so far led me explore computational science 
+                            and web developement; currently explore AI/ML; and hope to explore Quantum Computing in the future. <br><br>
+                            In my free time, I love to play basketball during school, ski in the winter, and row in the summer. I also enjoy participating in
+                            video game tournaments in my dorm. 
+                            </p>
                     </div>
                     
-                    <div class="column intro-filler" style="margin-top: 50px;"></div>
-
-                    <div class="column intro-right" style="margin-top: 20px; text-transform: none;">
-                        <i class="fa fa-linkedin-square" style="font-size: 20px;"></i> &nbsp;&nbsp; 
-                        <a href="https://www.linkedin.com/in/johnjhlee/">Linkedin</a> 
-                        <br> <br>
-                        <i class="fa fa-github" style="font-size: 20px;"></i> &nbsp;&nbsp; 
-                        <a href="https://github.com/johnlee-jh">Github</a> 
-                        <br> <br>
-                        <i class="fa fa-envelope" style="font-size: 20px;"> &nbsp;&nbsp; </i>
-                        leejohn24@berkeley.edu
-                        <br><br><br>
-                    </div>
-
+                    <div class="column intro-filler" style="margin-top: 50px;"></div>                    
                 </div>
-                <div style="margin-top: 30px;">
+                <div style="margin-top:30px;">
+
+                    <i class="fa fa-linkedin-square" style="font-size: 20px;"></i> &nbsp;&nbsp; 
+                        <a href="https://www.linkedin.com/in/johnjhlee/">Linkedin</a> 
+                    <i class="fa fa-github" style="font-size: 20px;"></i> &nbsp;&nbsp; 
+                        <a href="https://github.com/johnlee-jh">Github</a> 
+                    <i class="fa fa-envelope" style="font-size: 20px;"> &nbsp;&nbsp; </i>
+                        leejohn24@berkeley.edu
+                </div>
+                <div style="margin-top: 50px;">
                 <b>Frequently used tools</b>
                 <p>
                     <div class="tooltip" style="margin-top: 20px;">
@@ -455,13 +442,13 @@ body {font-size:16px;}
     <div class="row" id="projects">
         <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="color: #1A1F71; font-size: 32px;"><b>Projects</b></h1>
             </div>
             <div class="w3-row-padding" style="margin-top: 30px;">
                 <div class="w3-col m4 w3-margin-bottom">
-                <div style="background-color: #D1E8E2;">
+                <div style="background-color: #ecb8a2;">
                     <img src="in-progress.png" alt="type-oh" style="width:100%">
                     <div class="w3-container">
                     <h3>Type-oh!</h3>
@@ -473,24 +460,24 @@ body {font-size:16px;}
                 </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                    <div style="background-color: #FBE8A6;">
-                        <img src="in-progress.png" alt="personal-website" style="width:100%">
+                    <div style="background-color: #ece79d;">
+                        <img src="personal-website.png" alt="personal-website" style="width:100%">
                         <div class="w3-container">
                         <h3>Personal Website</h3>
                         <p class="w3-opacity">Aug 2020</p>
-                        <p>Responsive personal website (this!) programmed with HTML, CSS (with W3 package), and JavaScript</p>
+                        <p>Responsive personal website (this!) designed by myself and built with HTML, CSS, and JavaScript</p>
                         <br><br>
                         </div>
                     </div>
                     </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                <div style="background-color: #EDC7B7;">
+                <div style="background-color: #D1E8E2;">
                     <img src="mini-git.png" alt="mini-git" style="width:100%">
                     <div class="w3-container">
                     <h3>Mini Git</h3>
                     <p class="w3-opacity">May 2020</p>
-                    <p>Local version-control system that can run and execute most Git commands using serialization and Java I/O File Manipulation</p>
+                    <p>Local version-control system that can run and execute most Git commands using Java I/O File Manipulation</p>
                     <br><br>
                     </div>
                 </div>
@@ -847,7 +834,7 @@ body {font-size:16px;}
 <!-- Footer -->
 <div class="w3-light-grey w3-container" style="padding-right:58px;text-align: right; font-size: 14px; height: 80px;">
     <div style="margin-top: 20px;"></div>
-    Recent as of August 1st, 2020 <br>
+    Recent as of August 2nd, 2020 <br>
     &copy; Junghwan(John) Lee
 </div>
 
