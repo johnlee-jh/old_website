@@ -3,7 +3,6 @@
 Credits: 
 HTML, CSS, and JavaScript implemented by Junghwan(John) Lee. 
 Content imported from the previous version of the website (privately archived in the same domain).
-CSS Packages used: W3 CSS, Timeline
 -->
 <html lang="en">
 <title>John's Personal Website</title>
@@ -31,7 +30,7 @@ body {font-size:16px;}
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 100px;
-  background-color: black;
+  background-color: grey;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -51,7 +50,7 @@ body {font-size:16px;}
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: black transparent transparent transparent;
+  border-color: grey transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
@@ -149,6 +148,57 @@ body {font-size:16px;}
   }
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #5F6366;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #5F6366;
+}
+
+.topnav a.active {
+  background-color: #5F6366;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 /* Column Spacing CSS */
 .column {
     float: left;
@@ -159,9 +209,9 @@ body {font-size:16px;}
 .remove-column {
     float: left;
 }
-.main-left {width: 23.9%;}
-.main-middle {width: 70%;}
-.main-right {width: 6.1%;}
+.main-left {width: 12.5%;}
+.main-middle {width: 75%;}
+.main-right {width: 12.5%;}
 
 .profile-left {width: 5%;}
 .profile-middle {width: 90%}
@@ -219,7 +269,28 @@ body {font-size:16px;}
     clear: both;
 }
 
-@media screen and (max-width: 1200px) {
+.background-box {
+    /* background-color: ; */
+}
+.intro-box {
+    /* background-color: ; */
+}
+.education-box {
+    /* background-color: ; */
+}
+.experience-box {
+    /* background-color: ; */
+}
+.profile-box {
+    /* background-color: ; */
+}
+.research-box {
+    /* background-color: ; */
+}
+.honors-box {
+    /* background-color: ; */
+}
+@media screen and (max-width: 900px) {
   .column {
     width: 100%;
   }
@@ -233,13 +304,13 @@ body {font-size:16px;}
   }
 }
 
-@media (min-width:1200px){.w3-modal-content{width:1200px}.w3-john-hide-large{display:none!important}.w3-sidebar.w3-john-collapse{display:block!important}}
-@media (max-width:1200px){.w3-sidebar.w3-john-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
-
 </style>
 <body>
 
-<!-- Table of Contents/Sidebar -->
+<!-- Menu -->
+
+<!-- Previous SIDEBAR
+
 <nav class="w3-sidebar w3-john-collapse w3-john-color w3-top w3-large w3-padding" style="z-index:3;width:17.8vw; font-weight:bold;" id="mySidebar"><br>
   <div class="w3-container">
     <h3 class="w3-padding-64" style="margin-top: 30px;"><b>Contents<br></b></h3>
@@ -253,21 +324,33 @@ body {font-size:16px;}
     <a href="index.html#honors" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">&nbsp;&nbsp;&nbsp;&nbsp;Honors</a>
   </div>
 </nav>
-
-<!-- Mobile Table of Contents -->
 <header class="w3-container w3-top w3-john-hide-large w3-john-color w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-john-color w3-margin-right" onclick="w3_open()" style="font-size: 16px;">☰ &nbsp;&nbsp; Contents</a>
   <span></span>
 </header>
+ -->
 
-<!-- Mobile Overlay -->
+<!-- Overlay -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<div class="remove-row" style="background-color: #95a7b1; height: 70px;"></div>
-<div class="row" style="background-color: #95a7b1;">
+<div class="background-box row" style="background-color: #4D6D9A;">
     <div class="remove-column main-left" style="margin-top: 10px;"></div>
 
-    <div class="column main-middle" style="background-color:white; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+    <div class="column main-middle" style="background-color: #86B3D1; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+
+<!-- Current Top-Navigation Bar -->
+<!-- Top navigation -->
+<div class="topnav" id="myTopnav">
+    <a href="#"><b>Home</b></a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Reserach</a>
+    <a href="#projects">Honors</a>
+    <a href="javascript:void(0);" class="icon" onclick="navbar()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
 
 <!-- Start of Content-->
 <div class="w3-main">
@@ -276,7 +359,7 @@ body {font-size:16px;}
     <div class="row">
         <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #24305E;"> 
+        <div class="intro-box column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="font-size: 48px; color: #1A1F71;"><b>Hi, I'm John!</b></h1>
 
@@ -368,57 +451,76 @@ body {font-size:16px;}
         <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
 
-    <!-- Education -->
-    <div class="row" id="education">
+    <!-- Projects -->
+    <div class="row" id="projects">
         <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #F3D250;"> 
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
-                <h1 style="color: #1A1F71; font-size: 32px;"><b>Education</b></h1>
-
-                <div class="row" style="margin-top: 20px;">
-                    <div class="column edu-left">
-                        <b style="font-size: 22px;">University of California, Berkeley</b> <br>
-                        <div class="row" style="margin-top: 20px;">
-                            <div class="static-column college-left">
-                                <img src="cal-logo.png" alt="cal-logo" style="width:100%;">
-                            </div>
-                            <div class="static-column college-middle">
-                                &nbsp;&nbsp;&nbsp;&nbsp;<n><i>B.A. Computer Science and Physics</i></n><br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<n>Aug 2019 - May 2023 <n style="color: slategrey">(Sophomore)</n></n> <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<n>GPA: 3.515/4.0 </n> <br>
-                                <br>
-                            </div>
-                        </div>
-                        <br>
-                        <b style="font-size: 22px;">CheongShim International Academy</b> <br>
-                        <div class="row" style="margin-top: 20px;">
-                            <div class="static-column college-left">
-                                <img src="csia-logo.png" alt="csia-logo" style="width:100%">
-                            </div>
-                            <div class="static-column college-middle">
-                                &nbsp;&nbsp;&nbsp;&nbsp;<n><i>High School Diploma</i></n><br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<n>Mar 2016 - Feb 2019</n> <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<n>GPA: 4.95/5.0 </n> <br>
-                                <br>
-                            </div>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="column edu-middle" style="margin-top: 2px;">
-                        <b>Relevant Coursework</b> <br>
-                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Algorithms<br>
-                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Data Structures <br>
-                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Computer Architecture <br>
-                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Discrete Mathematics <br>
-                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Designing Information Systems <br>
-                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Mechanics <br>
-                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Introduction to Logic <br>
-                        <br><br>
+                <h1 style="color: #1A1F71; font-size: 32px;"><b>Projects</b></h1>
+            </div>
+            <div class="w3-row-padding" style="margin-top: 30px;">
+                <div class="w3-col m4 w3-margin-bottom">
+                <div style="background-color: #D1E8E2;">
+                    <img src="in-progress.png" alt="type-oh" style="width:100%">
+                    <div class="w3-container">
+                    <h3>Type-oh!</h3>
+                    <p class="w3-opacity"> Current </p>
+                    <p>Typo correction software based on grammar and word relevance through machine learning</p>
+                    <br><br>
                     </div>
                 </div>
+                </div>
+        
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div style="background-color: #FBE8A6;">
+                        <img src="in-progress.png" alt="personal-website" style="width:100%">
+                        <div class="w3-container">
+                        <h3>Personal Website</h3>
+                        <p class="w3-opacity">Aug 2020</p>
+                        <p>Responsive personal website (this!) programmed with HTML, CSS (with W3 package), and JavaScript</p>
+                        <br><br>
+                        </div>
+                    </div>
+                    </div>
+        
+                <div class="w3-col m4 w3-margin-bottom">
+                <div style="background-color: #EDC7B7;">
+                    <img src="mini-git.png" alt="mini-git" style="width:100%">
+                    <div class="w3-container">
+                    <h3>Mini Git</h3>
+                    <p class="w3-opacity">May 2020</p>
+                    <p>Local version-control system that can run and execute most Git commands using serialization and Java I/O File Manipulation</p>
+                    <br><br>
+                    </div>
+                </div>
+                </div>
             </div>
-            
+            <div class="w3-row-padding">
+                <div class="w3-col m4 w3-margin-bottom">
+                <div style="background-color: #B4DFE5; max-height: 500px;">
+                    <img src="loa-ai.png" alt="loa-ai" style="width:100%">
+                    <div class="w3-container">
+                    <h3>Lines of Action AI</h3>
+                    <p class="w3-opacity"> Mar 2020 </p>
+                    <p>AI for the board game Lines of Action made using minimax algorithms, heuristics, and alpha-beta pruning</p>
+                    <br><br>
+                    </div>
+                </div>
+                </div>
+        
+                <div class="w3-col m4 w3-margin-bottom">
+                <div style="background-color: #C5CBE3;">
+                    <img src="in-progress.png" alt="enigma" style="width:100%">
+                    <div class="w3-container">
+                    <h3>Enigma Cipher</h3>
+                    <p class="w3-opacity">Feb 2020</p>
+                    <p>Text encrpytion & decryption software that mimics the rotor/plugboard mechanics of an Enigma machine</p>
+                    <br><br>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
         <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
@@ -427,7 +529,7 @@ body {font-size:16px;}
     <div class="row" id="experience">
         <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #F78888;"> 
+        <div class="experience-box column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="color: #1A1F71; font-size: 32px;"><b>Experience</b></h1>
                 <div class="timeline">
@@ -485,76 +587,57 @@ body {font-size:16px;}
         <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
 
-    <!-- Projects -->
-    <div class="row" id="projects">
+    <!-- Education -->
+    <div class="row" id="education">
         <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #7284d3;"> 
+        <div class="education-box column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
-                <h1 style="color: #1A1F71; font-size: 32px;"><b>Projects</b></h1>
-            </div>
-            <div class="w3-row-padding" style="margin-top: 30px;">
-                <div class="w3-col m4 w3-margin-bottom">
-                <div style="background-color: #D1E8E2;">
-                    <img src="in-progress.png" alt="type-oh" style="width:100%">
-                    <div class="w3-container">
-                    <h3>Type-oh!</h3>
-                    <p class="w3-opacity"> Current </p>
-                    <p>Typo correction software based on grammar and word relevance through machine learning</p> <br>
-                    <br><br>
-                    </div>
-                </div>
-                </div>
-        
-                <div class="w3-col m4 w3-margin-bottom">
-                    <div style="background-color: #FBE8A6;">
-                        <img src="in-progress.png" alt="personal-website" style="width:100%">
-                        <div class="w3-container">
-                        <h3>Personal Website</h3>
-                        <p class="w3-opacity">Aug 2020</p>
-                        <p>Responsive personal website (this!) programmed with W3 CSS package, HTML, and JavaScript</p> <br>
-                        <br><br>
+                <h1 style="color: #1A1F71; font-size: 32px;"><b>Education</b></h1>
+
+                <div class="row" style="margin-top: 20px;">
+                    <div class="column edu-left">
+                        <b style="font-size: 22px;">University of California, Berkeley</b> <br>
+                        <div class="row" style="margin-top: 20px;">
+                            <div class="static-column college-left">
+                                <img src="cal-logo.png" alt="cal-logo" style="width:100%;">
+                            </div>
+                            <div class="static-column college-middle">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n><i>B.A. Computer Science and Physics</i></n><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n>Aug 2019 - May 2023 <n style="color: slategrey">(Sophomore)</n></n> <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n>GPA: 3.515/4.0 </n> <br>
+                                <br>
+                            </div>
                         </div>
+                        <br>
+                        <b style="font-size: 22px;">CheongShim International Academy</b> <br>
+                        <div class="row" style="margin-top: 20px;">
+                            <div class="static-column college-left">
+                                <img src="csia-logo.png" alt="csia-logo" style="width:100%">
+                            </div>
+                            <div class="static-column college-middle">
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n><i>High School Diploma</i></n><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n>Mar 2016 - Feb 2019</n> <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<n>GPA: 4.95/5.0 </n> <br>
+                                <br>
+                            </div>
+                        </div>
+                        <br>
                     </div>
+                    <div class="column edu-middle" style="margin-top: 2px;">
+                        <b>Relevant Coursework</b> <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Algorithms<br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Data Structures <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Computer Architecture <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Discrete Mathematics <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Designing Information Systems <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Mechanics <br>
+                        &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Introduction to Logic <br>
+                        <br><br>
                     </div>
-        
-                <div class="w3-col m4 w3-margin-bottom">
-                <div style="background-color: #EDC7B7;">
-                    <img src="mini-git.png" alt="mini-git" style="width:100%">
-                    <div class="w3-container">
-                    <h3>Mini Git</h3>
-                    <p class="w3-opacity">May 2020</p>
-                    <p>Local version-control system that can run and execute most Git commands using serialization and Java I/O File Manipulation</p>
-                    <br><br>
-                    </div>
-                </div>
                 </div>
             </div>
-            <div class="w3-row-padding">
-                <div class="w3-col m4 w3-margin-bottom">
-                <div style="background-color: #B4DFE5; max-height: 500px;">
-                    <img src="loa-ai.png" alt="loa-ai" style="width:100%">
-                    <div class="w3-container">
-                    <h3>Lines of Action AI</h3>
-                    <p class="w3-opacity"> Mar 2020 </p>
-                    <p>AI for the board game Lines of Action made using minimax algorithms, heuristics, and alpha-beta pruning</p>
-                    <br><br>
-                    </div>
-                </div>
-                </div>
-        
-                <div class="w3-col m4 w3-margin-bottom">
-                <div style="background-color: #C5CBE3;">
-                    <img src="in-progress.png" alt="enigma" style="width:100%">
-                    <div class="w3-container">
-                    <h3>Enigma Cipher</h3>
-                    <p class="w3-opacity">Feb 2020</p>
-                    <p>Text encrpytion & decryption software that mimics the rotor/plugboard mechanics of an Enigma machine</p>
-                    <br><br>
-                    </div>
-                </div>
-                </div>
-            </div>
+            
         </div>
         <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
@@ -563,12 +646,152 @@ body {font-size:16px;}
     <div class="row" id="research">
         <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #99CED3;"> 
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="color: #1A1F71; font-size: 32px;"><b>Research</b></h1>
+                <br>
+                <div class="row">
+                    <div class="column research-right" style="margin-top: 20px;">
+                        <div class="w3-light-grey" style="min-height: 200px;">
+                            <div class="w3-container">
+                            <div style="">
+                                <h3>Simplifying the Vacuum Bazooka</h3>
+                            </div>
+                            <div style="">
+                                <p class="w3-opacity"> <u><b>Junghwan Lee</b></u>, Woong Sung Lee, and Eunsoo Shin.
+                                <i> Physics Education - IOP Science</i>, 2019. </p>
+                            </div>
+                            <div style="">
+                                <button id="abs1" onclick="abstract1()">Show Abstract</button> 
+                                <a style="margin-left: 20px; text-decoration: none;" href="https://iopscience.iop.org/article/10.1088/1361-6552/ab08f1">
+                                    <i class="fa fa-external-link"></i> View Paper</a> <n style="color: grey; font-size: 12px;">(IOP Subscription required)</n>
+                            </div>
+                            <div id="abstract1" style="display: none;">
+                                <br>
+                                This paper provides a simplified explanation of the vacuum bazooka through diagrams and builds 
+                                a theoretical model only using concepts found in introductory mechanics. Our theory suggests 
+                                that the velocity of the projectile is proportional to the hyperbolic tangent of time, and 
+                                experimental measurements support this claim. We also find that the vacuum bazooka could be 
+                                used to demonstrate the concept of terminal velocity in a classroom setting.
+                                <br><br>
+                                <img src="res-vacuum.png" alt="vacuum-bazooka" style="width:50%">
+                                <br><br>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column research-filler" style="margin-top: 20px;"></div>
+        
+                    <div class="column research-right" style="margin-top: 20px;">
+                        <div class="w3-light-grey" style="min-height: 200px;">
+                            <div class="w3-container">
+                            <div>
+                                <h3>Measuring Granular Flow through a Funnel with a Force Sensor</h3>
+                            </div>
+                            <div>
+                            <p class="w3-opacity"> <u><b>Junghwan Lee</b></u> and Kyeong Min Kim. 
+                                <i>Young Scientists Journal</i>, 2018. </p>
+                            </div>
+                            <div>
+                                <button id="abs2" onclick="abstract2()">Show Abstract</button>
+                                <a style="margin-left: 20px; text-decoration: none;" href="https://arxiv.org/abs/1802.09947">
+                                    <i class="fa fa-external-link"></i> View Paper</a> 
+                            </div>
+                            <div id="abstract2" style="display: none;">
+                                <br>
+                                This paper presents an apparatus to measure the flow of granular matter through a funnel with a
+                                force sensor. In addition to being easily reproducible, our proposed method enhances measurement 
+                                accuracy from the popular method that uses a stopwatch. We notice, however, that our proposed 
+                                setup induces an unwelcome force that confounds force sensor readings. This issue is discussed, 
+                                and its significance on measurement accuracy is evaluated through theoretical and experimental 
+                                work.
+                                <br><br>
+                                <img src="res-granular.png" alt="granular-flow" style="width:50%">
+                                <br><br>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="row">
+                    <div class="column research-right" style="margin-top: 20px;">
+                        <div class="w3-light-grey" style="min-height: 250px;">
+                            <div class="w3-container">
+                            <div>
+                                <h3>The Effect of Liquid on the Vibrational Intensity of a Wineglass at Steady State Resonance</h3>
+                            </div>
+                            <div>
+                            <p class="w3-opacity"> <u><b>Junghwan Lee</b></u>. 
+                            <i> In Proceedings of the Korean Physical Society 2018 Spring Meeting</i>, 2018. </p>
+                            </div>
+                            <div>
+                                <button id="abs3" onclick="abstract3()">Show Abstract</button>
+                                <a style="margin-left: 20px; text-decoration: none;" href="https://arxiv.org/abs/1801.07514">
+                                    <i class="fa fa-external-link"></i> View Paper</a> 
+                            </div>
+                            <div id="abstract3" style="display: none;">
+                                <br>
+                                As a liquid is inserted into a wineglass, the natural frequency of the wineglass decreases. 
+                                This phenomenon, known as pitch lowering, is well explained in past papers. However, previous 
+                                literature have not yet mentioned that pitch lowering also reduces the resonance intensity of 
+                                a wineglass. Thus, this present paper aims to extend the body of research on this topic by 
+                                describing the relationship between pitch lowering and its effect on resonation intensity. To 
+                                do so, we identify the vibrating wineglass wall as a damped harmonic oscillator, derive a 
+                                theoretical model, and find that the resonance intensity of the wineglass is proportional to 
+                                the square of its natural frequency, under the assumption that damping stays constant. However, 
+                                our experiments showed the coefficient of damping to increase with respect to the amount of 
+                                liquid, which caused the data to deviate from its theoretical predictions. We conclude by 
+                                discussing the accuracy and limitation of our proposed model.
+                                <br><br>
+                                <img src="res-wineglass.png" alt="wineglass-resonation" style="width:50%">
+                                <br><br>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column research-filler" style="margin-top: 20px;"></div>
+        
+                    <div class="column research-right" style="margin-top: 20px;">
+                        <div class="w3-light-grey" style="min-height: 250px;">
+                            <div class="w3-container">
+                            <div >
+                                <h3>Dynamics of Cylindrical and Spherical Objects on a Turntable</h3>
+                            </div>
+                            <div >
+                            <p class="w3-opacity"> Kyeong Min Kim, Donggeon Oh, <u><b>Junghwan Lee</b></u>, Young-Gui Yoon, and Chan-Oung Park. 
+                                <i>Cited by the Russian Journal of Nonlinear Dynamics 2019 15(2): 171-178</i>, 2018. </p>
+                            </div>
+                            <div>
+                            <button id="abs4" onclick="abstract4()">Show Abstract</button>
+                            <a style="margin-left: 20px; text-decoration: none;" href="https://hal.archives-ouvertes.fr/hal-01761333">
+                                <i class="fa fa-external-link"></i> View Paper</a>
+                            </div>
+                            <div id="abstract4" style="display: none;">
+                                <br>
+                                A circular object placed on a rotating turntable demonstrates an interesting motion. Such 
+                                motion consists of the rolling object exhibiting a spiral motion with increasing radius and 
+                                the center of the spiral drifting towards the center of the turntable. This paper suggests 
+                                a novel approach to the dynamics of the motion when the contact between the cylindrical 
+                                rolling object and the turntable is a line. Under an assumption that the rolling objects 
+                                contact point with the turntable is quasistatic, this paper approximates a theoretical model 
+                                to solve for the maximum radius of the spiral orbit and the frequency of such circular motion. 
+                                The theoretical model will include the effect of various parameters on the motion, such as the 
+                                coefficient of rolling friction, the coefficient of kinetic friction, the coefficient of 
+                                pivoting friction, and the geometry of the rolling object.
+                                <br><br>
+                                <img src="res-turntable.png" alt="turntable-dynamics" style="width:50%">
+                                <br><br>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-        </div>
+            </div>
         <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
 
@@ -576,7 +799,7 @@ body {font-size:16px;}
     <div class="row" id="honors">
         <div class="column profile-left" style="margin-top: 1px;"></div>
 
-        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px; border-left: 5px solid #564F6F;"> 
+        <div class="column profile-middle" style="background-color: #f2f3f4; margin-top: 50px; border-radius: 5px;"> 
             <div style="margin-left: 20px; margin-top: 15px;">
                 <h1 style="color: #1A1F71; font-size: 32px;"><b>Honors</b></h1>
                 <div class="row">
@@ -609,168 +832,21 @@ body {font-size:16px;}
                     </div>
                 </div>
             </div>
+        </div>
         <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
 
-<!-- Research -->
-<div class="w3-container" id="research" style="margin-top:50px">
-    <div style="margin-top:50px"></div>
-    <h1 class="w3-xxxlarge" style="color: #1A1F71;"><b>Research</b></h1>
-    <hr style="width: 73.5vw;border:2px solid gold; margin-top: -5px;" class="w3-round">
-    <div>
-        <div class="row">
-            <div class="column research-right" style="margin-top: 20px;">
-                <div class="w3-light-grey" style="min-height: 200px;">
-                    <div class="w3-container">
-                    <div style="">
-                        <h3>Simplifying the Vacuum Bazooka</h3>
-                    </div>
-                    <div style="">
-                        <p class="w3-opacity"> <u><b>Junghwan Lee</b></u>, Woong Sung Lee, and Eunsoo Shin.
-                        <i> Physics Education - IOP Science</i>, 2019. </p>
-                    </div>
-                    <div style="">
-                        <button id="abs1" onclick="abstract1()">Show Abstract</button> 
-                        <a style="margin-left: 20px; text-decoration: none;" href="https://iopscience.iop.org/article/10.1088/1361-6552/ab08f1">
-                            <i class="fa fa-external-link"></i> View Paper</a> <n style="color: grey; font-size: 12px;">(IOP Subscription required)</n>
-                    </div>
-                    <div id="abstract1" style="display: none;">
-                        <br>
-                        This paper provides a simplified explanation of the vacuum bazooka through diagrams and builds 
-                        a theoretical model only using concepts found in introductory mechanics. Our theory suggests 
-                        that the velocity of the projectile is proportional to the hyperbolic tangent of time, and 
-                        experimental measurements support this claim. We also find that the vacuum bazooka could be 
-                        used to demonstrate the concept of terminal velocity in a classroom setting.
-                        <br><br>
-                        <img src="res-vacuum.png" alt="vacuum-bazooka" style="width:50%">
-                        <br><br>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column research-filler" style="margin-top: 20px;"></div>
-
-            <div class="column research-right" style="margin-top: 20px;">
-                <div class="w3-light-grey" style="min-height: 200px;">
-                    <div class="w3-container">
-                    <div>
-                        <h3>Measuring Granular Flow through a Funnel with a Force Sensor</h3>
-                    </div>
-                    <div>
-                    <p class="w3-opacity"> <u><b>Junghwan Lee</b></u> and Kyeong Min Kim. 
-                        <i>Young Scientists Journal</i>, 2018. </p>
-                    </div>
-                    <div>
-                        <button id="abs2" onclick="abstract2()">Show Abstract</button>
-                        <a style="margin-left: 20px; text-decoration: none;" href="https://arxiv.org/abs/1802.09947">
-                            <i class="fa fa-external-link"></i> View Paper</a> 
-                    </div>
-                    <div id="abstract2" style="display: none;">
-                        <br>
-                        This paper presents an apparatus to measure the flow of granular matter through a funnel with a
-                        force sensor. In addition to being easily reproducible, our proposed method enhances measurement 
-                        accuracy from the popular method that uses a stopwatch. We notice, however, that our proposed 
-                        setup induces an unwelcome force that confounds force sensor readings. This issue is discussed, 
-                        and its significance on measurement accuracy is evaluated through theoretical and experimental 
-                        work.
-                        <br><br>
-                        <img src="res-granular.png" alt="granular-flow" style="width:50%">
-                        <br><br>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="column research-right" style="margin-top: 20px;">
-                <div class="w3-light-grey" style="min-height: 250px;">
-                    <div class="w3-container">
-                    <div>
-                        <h3>The Effect of Liquid on the Vibrational Intensity of a Wineglass at Steady State Resonance</h3>
-                    </div>
-                    <div>
-                    <p class="w3-opacity"> <u><b>Junghwan Lee</b></u>. 
-                    <i> In Proceedings of the Korean Physical Society 2018 Spring Meeting</i>, 2018. </p>
-                    </div>
-                    <div>
-                        <button id="abs3" onclick="abstract3()">Show Abstract</button>
-                        <a style="margin-left: 20px; text-decoration: none;" href="https://arxiv.org/abs/1801.07514">
-                            <i class="fa fa-external-link"></i> View Paper</a> 
-                    </div>
-                    <div id="abstract3" style="display: none;">
-                        <br>
-                        As a liquid is inserted into a wineglass, the natural frequency of the wineglass decreases. 
-                        This phenomenon, known as pitch lowering, is well explained in past papers. However, previous 
-                        literature have not yet mentioned that pitch lowering also reduces the resonance intensity of 
-                        a wineglass. Thus, this present paper aims to extend the body of research on this topic by 
-                        describing the relationship between pitch lowering and its effect on resonation intensity. To 
-                        do so, we identify the vibrating wineglass wall as a damped harmonic oscillator, derive a 
-                        theoretical model, and find that the resonance intensity of the wineglass is proportional to 
-                        the square of its natural frequency, under the assumption that damping stays constant. However, 
-                        our experiments showed the coefficient of damping to increase with respect to the amount of 
-                        liquid, which caused the data to deviate from its theoretical predictions. We conclude by 
-                        discussing the accuracy and limitation of our proposed model.
-                        <br><br>
-                        <img src="res-wineglass.png" alt="wineglass-resonation" style="width:50%">
-                        <br><br>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column research-filler" style="margin-top: 20px;"></div>
-
-            <div class="column research-right" style="margin-top: 20px;">
-                <div class="w3-light-grey" style="min-height: 250px;">
-                    <div class="w3-container">
-                    <div >
-                        <h3>Dynamics of Cylindrical and Spherical Objects on a Turntable</h3>
-                    </div>
-                    <div >
-                    <p class="w3-opacity"> Kyeong Min Kim, Donggeon Oh, <u><b>Junghwan Lee</b></u>, Young-Gui Yoon, and Chan-Oung Park. 
-                        <i>Cited by the Russian Journal of Nonlinear Dynamics 2019 15(2): 171-178</i>, 2018. </p>
-                    </div>
-                    <div>
-                    <button id="abs4" onclick="abstract4()">Show Abstract</button>
-                    <a style="margin-left: 20px; text-decoration: none;" href="https://hal.archives-ouvertes.fr/hal-01761333">
-                        <i class="fa fa-external-link"></i> View Paper</a>
-                    </div>
-                    <div id="abstract4" style="display: none;">
-                        <br>
-                        A circular object placed on a rotating turntable demonstrates an interesting motion. Such 
-                        motion consists of the rolling object exhibiting a spiral motion with increasing radius and 
-                        the center of the spiral drifting towards the center of the turntable. This paper suggests 
-                        a novel approach to the dynamics of the motion when the contact between the cylindrical 
-                        rolling object and the turntable is a line. Under an assumption that the rolling objects 
-                        contact point with the turntable is quasistatic, this paper approximates a theoretical model 
-                        to solve for the maximum radius of the spiral orbit and the frequency of such circular motion. 
-                        The theoretical model will include the effect of various parameters on the motion, such as the 
-                        coefficient of rolling friction, the coefficient of kinetic friction, the coefficient of 
-                        pivoting friction, and the geometry of the rolling object.
-                        <br><br>
-                        <img src="res-turntable.png" alt="turntable-dynamics" style="width:50%">
-                        <br><br>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br><br>
-</div>
-
+    <div style="margin-top: 80px;"></div>
 <!-- End of Content-->
-
-    </div>
+</div>
+</div>
 
     <div class="remove-column main-right" style="margin-top: 10px;"></div>
 </div>
 
 <!-- Footer -->
-<div class="w3-light-grey w3-container w3-padding-32" style="padding-right:58px;text-align: right; font-size: 14px;">
+<div class="w3-light-grey w3-container" style="padding-right:58px;text-align: right; font-size: 14px; height: 80px;">
+    <div style="margin-top: 20px;"></div>
     Recent as of August 1st, 2020 <br>
     &copy; Junghwan(John) Lee
 </div>
@@ -785,6 +861,15 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
+}
+
+function navbar() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 
 // Image Gallery (Unused)
