@@ -3,7 +3,6 @@
 Credits: 
 HTML, CSS, and JavaScript implemented by Junghwan(John) Lee. 
 Content imported from the previous version of the website (privately archived in the same domain).
-W3 CSS Package used for general layout.
 -->
 <html lang="en">
 <title>John's Personal Website</title>
@@ -14,7 +13,7 @@ W3 CSS Package used for general layout.
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-<link rel="icon" type="image/png" href="favicon.png"/>
+<link rel="icon" type="image/png" href="img/favicon.png"/>
 
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
@@ -324,10 +323,7 @@ body {font-size:16px;}
 </style>
 <body>
 
-
 <!-- Overlay -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
 <div class="background-box row" style="background-color: #8590AA;">
     <div class="remove-column main-left" style="margin-top: 10px;"></div>
 
@@ -347,7 +343,7 @@ body {font-size:16px;}
 </div>
 
 <!-- Start of Content-->
-<div class="w3-main">
+<div>
 
     <!-- Introduction -->
     <div class="row">
@@ -367,18 +363,18 @@ body {font-size:16px;}
                             Computing in the future. <br><br>
                             In my free time, I love to play basketball during school, ski in the winter, and row in the summer. I also enjoy participating in
                             video game tournaments in my dorm. <br><br>
-                            Feel free to contact me via email at <b>leejohn24@berkeley.edu</b>
+                            Feel free to contact me via email at <n style="color: black;">leejohn24@berkeley.edu</n>
                             </p>
                     </div>
                 </div>
-                <div style="margin-top:30px;">
-                  <button onclick="location.href = '/resume.pdf';" id="resume-button">
+                <div style="margin-top:10px;">
+                  <button onclick="location.href = '/resume.pdf';" id="resume-button" style="margin-right: 20px; margin-top: 20px;">
                     <i class="fa fa-file-pdf-o" style="color:rgb(255, 64, 64);"></i> &nbsp; Resume
                   </button>
-                  <button onclick="location.href = url('www.linkedin.com/in/johnjhlee/');" id="resume-button" style="margin-left: 30px;">
+                  <button onclick="location.href = 'https://www.linkedin.com/in/johnjhlee/';" id="resume-button" style="margin-right: 20px; margin-top: 20px;">
                     <i class="fa fa-linkedin-square" style="color:rgb(0, 107, 207);"></i> &nbsp; Linkedin
                   </button>
-                  <button onclick="location.href = url('www.github.com/johnlee-jh');" id="resume-button" style="margin-left: 30px;">
+                  <button onclick="location.href = 'https://www.github.com/johnlee-jh';" id="resume-button" style="margin-top: 20px;">
                     <i class="fa fa-github" style="color:rgba(0, 0, 0, 0.842);"></i> &nbsp; Github
                   </button>
 
@@ -386,58 +382,58 @@ body {font-size:16px;}
                 <div style="margin-top: 50px;">
                 <b>Frequently used tools</b>
                 <p>
-                    <div class="tooltip" style="margin-top: 20px;">
+                    <div class="tooltip" style="margin-top: 10px;">
                         <i class="devicon-java-plain colored" style="font-size: 60px;" title="Java"></i>
                         <span class="tooltiptext">Java (8.0)</span>
-                    </div>&nbsp;
-                    <div class="tooltip" style="margin-top: 20px;">
+                    </div>
+                    <div class="tooltip" style="margin-top: 10px;">
                         <i class="devicon-c-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">C (18)</span>
-                    </div>&nbsp;
-                    <div class="tooltip" style="margin-top: 20px;">
+                    </div>
+                    <div class="tooltip" style="margin-top: 10px;">
                         <i class="devicon-python-plain" style="font-size: 60px;"></i>
                         <span class="tooltiptext">Python (3.8)</span>
-                    </div>&nbsp;
-                    <div class="tooltip" style="margin-top: 20px;">
+                    </div>
+                    <div class="tooltip" style="margin-top: 10px;">
                         <i class="devicon-git-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">Git</span>
-                    </div>&nbsp;
-                    <div class="tooltip" style="margin-top: 20px;">
+                    </div>
+                    <div class="tooltip" style="margin-top: 10px;">
                         <i class="devicon-html5-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">HTML (5)</span>
-                    </div>&nbsp;
-                    <div class="tooltip" style="margin-top: 20px;">
+                    </div>
+                    <div class="tooltip" style="margin-top: 10px;">
                         <i class="devicon-css3-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">CSS (3)</span>
-                    </div>&nbsp;
-                    <div class="tooltip" style="margin-top: 20px;">
+                    </div>
+                    <div class="tooltip" style="margin-top: 10px;">
                         <i class="devicon-bootstrap-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">Bootstrap</span>
-                    </div>&nbsp;
+                    </div>
                     <!--
                     <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-sass-original colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">SASS</span>
-                    </div>&nbsp;
+                    </div>
                     -->
-                    <div class="tooltip" style="margin-top: 20px;">
+                    <div class="tooltip" style="margin-top: 10px;">
                         <i class="devicon-javascript-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">JavaScript</span>
-                    </div>&nbsp;
+                    </div>
                     <!--
                     <div class="tooltip" style="margin-top: 20px;">
                         <i class="devicon-npm-original-wordmark colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">NPM</span>
-                    </div>&nbsp;
+                    </div>
                     -->
-                    <div class="tooltip" style="margin-top: 20px;">
+                    <div class="tooltip" style="margin-top: 10px;">
                         <i class="devicon-visualstudio-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">Visual Studio Code</span>
-                    </div>&nbsp;
-                    <div class="tooltip" style="margin-top: 20px;">
+                    </div>
+                    <div class="tooltip" style="margin-top: 10px;">
                         <i class="devicon-intellij-plain colored" style="font-size: 60px;"></i>
                         <span class="tooltiptext">IntelliJ</span>
-                    </div>&nbsp;
+                    </div>
                     </p>
                 </div>
             </div>
@@ -456,7 +452,7 @@ body {font-size:16px;}
             </div>
             <div class="w3-row-padding" style="margin-top: 30px;">
                 <div class="w3-col m4 w3-margin-bottom">
-                <div style="border: 2px solid #3B8BEB; background-color: #E7E3D4;">
+                <div style="border: 2px solid #3B8BEB; background-color: #fdefbc;">
                     <img src="img/in-progress.png" alt="type-oh" style="width:100%">
                     <div class="w3-container">
                     <h3>Type-oh!</h3>
@@ -468,7 +464,7 @@ body {font-size:16px;}
                 </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                    <div style="border: 2px solid #3B8BEB; background-color: #E7E3D4;">
+                    <div style="border: 2px solid #3B8BEB; background-color: #fdefbc;">
                         <img src="img/personal-website.png" alt="personal-website" style="width:100%">
                         <div class="w3-container">
                         <h3>Personal Website</h3>
@@ -480,7 +476,7 @@ body {font-size:16px;}
                     </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                <div style="border: 2px solid #3B8BEB; background-color: #E7E3D4;">
+                <div style="border: 2px solid #3B8BEB; background-color: #fdefbc;">
                     <img src="img/mini-git.png" alt="mini-git" style="width:100%">
                     <div class="w3-container">
                     <h3>Mini Git</h3>
@@ -493,7 +489,7 @@ body {font-size:16px;}
             </div>
             <div class="w3-row-padding">
                 <div class="w3-col m4 w3-margin-bottom">
-                <div style="border: 2px solid #3B8BEB; background-color: #E7E3D4;">
+                <div style="border: 2px solid #3B8BEB; background-color: #fdefbc;">
                     <img src="img/loa-ai.png" alt="loa-ai" style="width:100%">
                     <div class="w3-container">
                     <h3>Lines of Action AI</h3>
@@ -505,7 +501,7 @@ body {font-size:16px;}
                 </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                <div style="border: 2px solid #3B8BEB; background-color: #E7E3D4;">
+                <div style="border: 2px solid #3B8BEB; background-color: #fdefbc;">
                     <img src="img/in-progress.png" alt="enigma" style="width:100%">
                     <div class="w3-container">
                     <h3>Enigma Cipher</h3>
@@ -533,7 +529,7 @@ body {font-size:16px;}
                       <div class="content">
                         <n style="font-size: 18px;">Mar 2020 - Present</n>
                         <div style="height: 10px;"></div>
-                        <div style="border: 2px solid #3B8BEB; background-color: #E7E3D4; border-radius: 10px;">
+                        <div style="border: 2px solid #3B8BEB; background-color: #fdefbc; border-radius: 10px;">
                             <div style="margin-left: 10px; margin-right: 10px;">
                                 <div style="height: 10px;"></div>
                                 <n style="font-size: 24px;">IPMD Inc.</n> <br>
@@ -549,7 +545,7 @@ body {font-size:16px;}
                       <div class="content">
                         <n style="font-size: 18px;">Jan 2020 - May 2020</n>
                         <div style="height: 10px;"></div>
-                        <div style="border: 2px solid #3B8BEB; background-color: #E7E3D4; border-radius: 3px;">
+                        <div style="border: 2px solid #3B8BEB; background-color: #fdefbc; border-radius: 3px;">
                             <div style="margin-left: 10px; margin-right: 10px;">
                               <div style="height: 10px;"></div>
                                 <n style="font-size: 24px;">IEEE Student Branch at UC Berkeley</n> <br>
@@ -567,7 +563,7 @@ body {font-size:16px;}
                         <div class="content">
                           <n style="font-size: 18px;">Mar 2017 - Feb 2019</n>
                           <div style="height: 10px;"></div>
-                        <div style="border: 2px solid #3B8BEB; background-color: #E7E3D4; border-radius: 3px;">
+                        <div style="border: 2px solid #3B8BEB; background-color: #fdefbc; border-radius: 3px;">
                             <div style="margin-left: 10px; margin-right: 10px;">
                               <div style="height: 10px;"></div>
                                 <n style="font-size: 24px;">Pacific Engineering Club</n> <br>
@@ -651,7 +647,7 @@ body {font-size:16px;}
                 <br>
                 <div class="row">
                     <div class="column research-right" style="margin-top: 20px;">
-                        <div style="min-height: 200px; border: 2px solid #3B8BEB; background-color: #E7E3D4;">
+                        <div style="min-height: 200px; border: 2px solid #3B8BEB; background-color: #fdefbc;">
                             <div class="w3-container">
                             <div>
                                 <h3 style="font-size: 18px;">Simplifying the Vacuum Bazooka</h3>
@@ -683,7 +679,7 @@ body {font-size:16px;}
                     <div class="column research-filler" style="margin-top: 20px;"></div>
         
                     <div class="column research-right" style="margin-top: 20px;">
-                        <div style="min-height: 200px; border: 2px solid #3B8BEB; background-color: #E7E3D4;">
+                        <div style="min-height: 200px; border: 2px solid #3B8BEB; background-color: #fdefbc;">
                             <div class="w3-container">
                             <div>
                                 <h3 style="font-size: 18px;">Measuring Granular Flow through a Funnel with a Force Sensor</h3>
@@ -717,7 +713,7 @@ body {font-size:16px;}
         
                 <div class="row">
                     <div class="column research-right" style="margin-top: 20px;">
-                        <div style="min-height: 200px; border: 2px solid #3B8BEB; background-color: #E7E3D4;">
+                        <div style="min-height: 200px; border: 2px solid #3B8BEB; background-color: #fdefbc;">
                             <div class="w3-container">
                             <div>
                                 <h3 style="font-size: 18px;">The Effect of Liquid on the Vibrational Intensity of a Wineglass at Steady State Resonance</h3>
@@ -755,7 +751,7 @@ body {font-size:16px;}
                     <div class="column research-filler" style="margin-top: 20px;"></div>
         
                     <div class="column research-right" style="margin-top: 20px;">
-                        <div style="min-height: 200px; border: 2px solid #3B8BEB; background-color: #E7E3D4;">
+                        <div style="min-height: 200px; border: 2px solid #3B8BEB; background-color: #fdefbc;">
                             <div class="w3-container">
                             <div >
                                 <h3 style="font-size: 18px;">Dynamics of Cylindrical and Spherical Objects on a Turntable</h3>
@@ -781,7 +777,7 @@ body {font-size:16px;}
                                 The theoretical model will include the effect of various parameters on the motion, such as the 
                                 coefficient of rolling friction, the coefficient of kinetic friction, the coefficient of 
                                 pivoting friction, and the geometry of the rolling object.
-                                <br>
+                                <br><br>
                                 <img src="img/res-turntable.png" alt="turntable-dynamics" style="width:100%">
                                 <br><br>
                             </div>
@@ -804,7 +800,7 @@ body {font-size:16px;}
                 <h1 style="color: #1A1F71; font-size: 32px;"><b>Honors</b></h1>
                 <div class="row">
                     <div class="column research-right" style="margin-top: 20px;">
-                        <div style="border: 2px solid #3B8BEB; background-color: #E7E3D4; min-height: 200px;">
+                        <div style="border: 2px solid #3B8BEB; background-color: #fdefbc; min-height: 200px;">
                             <div class="w3-container">
                               <div style="height: 20px;"></div>
                                 <b style="font-size: 20px;">Leadership Award</b> <br>
@@ -821,7 +817,7 @@ body {font-size:16px;}
                     <div class="column research-filler" style="margin-top: 20px;"></div>
         
                     <div class="column research-right" style="margin-top: 20px;">
-                        <div style="border: 2px solid #3B8BEB; background-color: #E7E3D4; min-height: 200px;">
+                        <div style="border: 2px solid #3B8BEB; background-color: #fdefbc; min-height: 200px;">
                             <div class="w3-container">
                               <div style="height: 20px;"></div>
                                 <b style="font-size: 20px;">IKEF Scholarship</b>
@@ -869,20 +865,12 @@ function w3_close() {
 }
 
 function navbar() {
-  var x = document.getElementById("myTopnav");
+  var x = document.getElementById("navbar");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
     x.className = "topnav";
   }
-}
-
-// Image Gallery (Unused)
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
 }
 
 // Show/Hide Abstracts in Research Section
