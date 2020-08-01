@@ -3,6 +3,7 @@
 Credits: 
 HTML, CSS, and JavaScript implemented by Junghwan(John) Lee. 
 Content imported from the previous version of the website (privately archived in the same domain).
+W3 CSS Package used for general layout.
 -->
 <html lang="en">
 <title>John's Personal Website</title>
@@ -12,6 +13,7 @@ Content imported from the previous version of the website (privately archived in
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+<link rel="icon" type="image/png" href="favicon.png"/>
 
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
@@ -252,9 +254,9 @@ body {font-size:16px;}
 .exp-middle4 {width: 70%;}
 .exp-right4 {width: 0%;}
 
-.research-left {width: 48.5%;}
+.research-left {width: 48%;}
 .research-filler {width: 2%;}
-.research-right {width: 48.5%;}
+.research-right {width: 48%;}
 
 
 .row:after {
@@ -356,9 +358,12 @@ body {font-size:16px;}
 
                 <div class="row">
                     <div class="column intro-left" style="margin-top: 0px;">
-                        <p style="color: #555555; line-height: 24px;"> My full name is Junghwan Lee, and I'm a sophomore majoring in CS + Physics at UC Berkeley.
-                            I've had a lifelong interest in using mathematical principles to interact with the world, which so far led me to explore computational 
-                            science and web development; currently explore AI/ML; and hope to explore Quantum Computing in the future. <br><br>
+                        <p style="color: #555555; line-height: 24px;"> My full name is Junghwan Lee, and I'm a sophomore majoring CS + Physics at UC Berkeley.
+                            I've had a lifelong interest in using mathematical principles to interact with the world, which so far led me to explore various fields
+                            in Computer Science and potential applications of Physics in CS.
+                            
+                            At the moment, I have explored computational science and web development; am currently exploring AI/ML; and hope to explore Quantum
+                            Computing in the future. <br><br>
                             In my free time, I love to play basketball during school, ski in the winter, and row in the summer. I also enjoy participating in
                             video game tournaments in my dorm. 
                             </p>
@@ -448,7 +453,7 @@ body {font-size:16px;}
             </div>
             <div class="w3-row-padding" style="margin-top: 30px;">
                 <div class="w3-col m4 w3-margin-bottom">
-                <div style="background-color: #ecb8a2;">
+                <div style="border: 2px solid #ecb8a2;">
                     <img src="in-progress.png" alt="type-oh" style="width:100%">
                     <div class="w3-container">
                     <h3>Type-oh!</h3>
@@ -460,7 +465,7 @@ body {font-size:16px;}
                 </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                    <div style="background-color: #ece79d;">
+                    <div style="border: 2px solid #ece79d;">
                         <img src="personal-website.png" alt="personal-website" style="width:100%">
                         <div class="w3-container">
                         <h3>Personal Website</h3>
@@ -472,7 +477,7 @@ body {font-size:16px;}
                     </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                <div style="background-color: #D1E8E2;">
+                <div style="border: 2px solid #D1E8E2;">
                     <img src="mini-git.png" alt="mini-git" style="width:100%">
                     <div class="w3-container">
                     <h3>Mini Git</h3>
@@ -485,7 +490,7 @@ body {font-size:16px;}
             </div>
             <div class="w3-row-padding">
                 <div class="w3-col m4 w3-margin-bottom">
-                <div style="background-color: #B4DFE5; max-height: 500px;">
+                <div style="border: 2px solid #B4DFE5; max-height: 500px;">
                     <img src="loa-ai.png" alt="loa-ai" style="width:100%">
                     <div class="w3-container">
                     <h3>Lines of Action AI</h3>
@@ -497,7 +502,7 @@ body {font-size:16px;}
                 </div>
         
                 <div class="w3-col m4 w3-margin-bottom">
-                <div style="background-color: #C5CBE3;">
+                <div style="border: 2px solid #C5CBE3;">
                     <img src="in-progress.png" alt="enigma" style="width:100%">
                     <div class="w3-container">
                     <h3>Enigma Cipher</h3>
@@ -639,7 +644,7 @@ body {font-size:16px;}
                 <br>
                 <div class="row">
                     <div class="column research-right" style="margin-top: 20px;">
-                        <div class="w3-light-grey" style="min-height: 200px;">
+                        <div style="min-height: 200px; background-color: #D1E8E2;">
                             <div class="w3-container">
                             <div style="">
                                 <h3>Simplifying the Vacuum Bazooka</h3>
@@ -671,7 +676,7 @@ body {font-size:16px;}
                     <div class="column research-filler" style="margin-top: 20px;"></div>
         
                     <div class="column research-right" style="margin-top: 20px;">
-                        <div class="w3-light-grey" style="min-height: 200px;">
+                        <div style="min-height: 200px; background-color: #D1E8E2;">
                             <div class="w3-container">
                             <div>
                                 <h3>Measuring Granular Flow through a Funnel with a Force Sensor</h3>
@@ -705,7 +710,7 @@ body {font-size:16px;}
         
                 <div class="row">
                     <div class="column research-right" style="margin-top: 20px;">
-                        <div class="w3-light-grey" style="min-height: 250px;">
+                        <div style="min-height: 250px; background-color: #D1E8E2;">
                             <div class="w3-container">
                             <div>
                                 <h3>The Effect of Liquid on the Vibrational Intensity of a Wineglass at Steady State Resonance</h3>
@@ -743,7 +748,7 @@ body {font-size:16px;}
                     <div class="column research-filler" style="margin-top: 20px;"></div>
         
                     <div class="column research-right" style="margin-top: 20px;">
-                        <div class="w3-light-grey" style="min-height: 250px;">
+                        <div style="min-height: 250px; background-color: #D1E8E2;">
                             <div class="w3-container">
                             <div >
                                 <h3>Dynamics of Cylindrical and Spherical Objects on a Turntable</h3>
@@ -778,6 +783,7 @@ body {font-size:16px;}
                     </div>
                 </div>
             </div>
+            <div style="margin-top: 40px;"> </div>
             </div>
         <div class="column profile-right" style="margin-top: 1px;"></div>
     </div>
